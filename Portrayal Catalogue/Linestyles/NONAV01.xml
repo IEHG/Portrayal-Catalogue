@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?S100lineage source="S52Preslib4.0" format="S100Ed2" version="0.1" creationDate="2023-11-02"?>
+<?S100Meta name="NONAV" exposition="line indicating prohibited area for navigation"?>
+<lineStyle>
+   <intervalLength>25.8</intervalLength>
+   <pen width="0.32">
+      <color>CHGRD</color>
+   </pen>
+   <dash>
+      <start>2</start>
+      <length>3</length>
+   </dash>
+   <dash>
+      <start>10.4</start>
+      <length>3</length>
+   </dash>
+   <dash>
+      <start>14.2</start>
+      <length>3</length>
+   </dash>
+   <dash>
+      <start>22.6</start>
+      <length>3</length>
+   </dash>
+   <symbol reference="BOYSPP11">
+      <position>7.6</position>
+   </symbol>
+   <symbol reference="BOYSPP11">
+      <position>19.8</position>
+   </symbol>
+</lineStyle>
