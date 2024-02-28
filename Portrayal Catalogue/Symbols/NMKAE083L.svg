@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="7.00mm" height="6.06mm" viewBox="-3.51 -4.08 7.02 6.08" xmlns="http://www.w3.org/2000/svg">
+  <title>NMKAE083L</title>
+  <desc>secondary waterway ahead on the right, main waterway on the left</desc>
+  <metadata />
+  <g>
+    <path class="fBLACK sBLACK" d="M 3.50,1.99 L 0.00,-4.07 L -3.50,1.99 L 3.50,1.99 Z" stroke-width="0.04" />
+    <path class="fYLLOW sYLLOW" d="M -0.42,-1.29 L -1.21,-1.29 L -0.30,0.59 L -0.30,1.60 L 0.49,1.60 L 0.49,0.11 L 1.24,-1.29 L 0.82,-1.29 L 0.17,-0.16 L -0.42,-1.29 Z" stroke-width="0.04" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

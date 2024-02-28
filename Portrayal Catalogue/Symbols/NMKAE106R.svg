@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="8.91mm" height="6.53mm" viewBox="-4.46 -3.28 8.93 6.55" xmlns="http://www.w3.org/2000/svg">
+  <title>NMKAE106R</title>
+  <desc>cross river to port</desc>
+  <metadata />
+  <g>
+    <path class="f0 sWHITE" d="M 0.00,0.00 L 0.00,0.00 " stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M -4.45,0.00 L 0.00,-3.27 L 4.45,0.00 L 0.00,3.27 L -4.45,0.00 Z" stroke-width="0.04" />
+    <path class="fWHITE sWHITE" d="M -3.74,0.00 L 0.00,-2.75 L 3.75,0.00 L 0.00,2.74 L -3.74,0.00 Z" stroke-width="0.04" />
+    <path class="fMIDRD sMIDRD" d="M -0.83,1.56 L 0.00,0.73 L 0.83,1.56 L 1.56,0.83 L 0.73,0.00 L 1.56,-0.83 L 0.83,-1.56 L 0.00,-0.73 L -0.83,-1.56 L -1.56,-0.83 L -0.73,0.00 L -1.56,0.83 L -0.83,1.56 Z" stroke-width="0.04" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

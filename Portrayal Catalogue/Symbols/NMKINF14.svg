@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="7.00mm" height="7.00mm" viewBox="-3.51 -3.51 7.02 7.02" xmlns="http://www.w3.org/2000/svg">
+  <title>NMKINF14</title>
+  <desc>berthing area reserved for vessels other than pushing navigation vessels that are required to carry three blue lights or three blue cones on the side of the waterway on which the sign is placed (E.5.11)</desc>
+  <metadata />
+  <g>
+    <path class="fAZUBL sBLACK" d="M 3.50,3.50 L -3.50,3.50 L -3.50,-3.50 L 3.50,-3.50 L 3.50,3.50 Z" stroke-width="0.12" />
+    <path class="fWHITE sWHITE" d="M 2.55,-1.89 L -2.57,-1.89 L 0.00,2.51 L 2.55,-1.89 Z" stroke-width="0.04" />
+    <path class="fAZUBL sAZUBL" d="M -0.51,-1.48 L 0.51,-1.48 L 0.00,-0.66 L -0.51,-1.48 Z" stroke-width="0.04" />
+    <path class="fAZUBL sAZUBL" d="M -0.51,-0.32 L 0.51,-0.32 L 0.00,0.51 L -0.51,-0.32 Z" stroke-width="0.04" />
+    <path class="fAZUBL sAZUBL" d="M -0.51,0.84 L 0.51,0.84 L 0.00,1.67 L -0.51,0.84 Z" stroke-width="0.04" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

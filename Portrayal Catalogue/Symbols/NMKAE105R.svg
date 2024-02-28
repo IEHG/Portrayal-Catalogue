@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="7.00mm" height="6.06mm" viewBox="-3.51 -4.05 7.02 6.08" xmlns="http://www.w3.org/2000/svg">
+  <title>NMKAE105R</title>
+  <desc>proceed in the middle of the river</desc>
+  <metadata />
+  <g>
+    <path class="fBLACK sBLACK" d="M 0.00,-4.04 L -3.50,2.02 L 3.50,2.02 L 0.00,-4.04 Z" stroke-width="0" />
+    <path class="fWHITE sWHITE" d="M -2.78,1.60 L 0.00,-3.21 L 2.78,1.60 L -2.78,1.60 Z" stroke-width="0" />
+    <path class="fMIDRD sMIDRD" d="M -1.14,1.38 L -0.74,1.38 L -0.74,-1.03 L -1.14,-1.03 L -1.14,1.38 Z" stroke-width="0.04" />
+    <path class="fMIDRD sMIDRD" d="M 0.72,1.38 L 1.12,1.38 L 1.12,-1.03 L 0.72,-1.03 L 0.72,1.38 Z" stroke-width="0.04" />
+    <path class="fMIDRD sMIDRD" d="M 0.72,0.37 L -0.74,0.37 L -0.74,-0.03 L 0.72,-0.03 L 0.72,0.37 Z" stroke-width="0.04" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>
