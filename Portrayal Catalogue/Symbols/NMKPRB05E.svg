@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="4.90mm" height="4.30mm" viewBox="-2.07 -4.31 4.92 4.32" xmlns="http://www.w3.org/2000/svg">
+  <title>NMKPRB05E</title>
+  <desc>entry permitted (E.1) on buoy</desc>
+  <metadata />
+  <g>
+    <path class="fWHITE sBLACK" d="M -2.06,0.00 L 2.06,0.00 L 2.06,-0.68 L 1.52,-0.68 L 1.24,-2.13 L -0.42,-2.13 L -1.59,-0.69 L -2.06,-0.68 L -2.06,0.00 Z" stroke-width="0.12" />
+    <path class="fDRKGN sDRKGN" d="M -1.30,-2.13 L 2.10,-2.13 L 2.84,-4.30 L -0.55,-4.30 L -1.30,-2.13 Z" stroke-width="0.04" />
+    <path class="fWHITE sWHITE" d="M 0.58,-4.30 L 1.71,-4.30 L 0.96,-2.13 L -0.17,-2.13 L 0.58,-4.30 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -0.55,-4.30 L 2.84,-4.30 L 2.09,-2.13 L -1.30,-2.13 L -0.55,-4.30 " stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

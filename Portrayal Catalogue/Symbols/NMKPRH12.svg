@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="3.50mm" height="3.50mm" viewBox="-1.76 -1.76 3.52 3.52" xmlns="http://www.w3.org/2000/svg">
+  <title>NMKPRH12</title>
+  <desc>no passing on left side (A.10)</desc>
+  <metadata />
+  <g>
+    <path class="fWHITE sBLACK" d="M 0.00,-1.75 L -1.75,0.00 L 0.00,1.75 L 1.75,0.00 L 0.00,-1.75 Z" stroke-width="0.12" />
+    <path class="fMIDRD sMIDRD" d="M 0.00,-1.75 L 0.00,1.75 L -1.75,0.00 L 0.00,-1.75 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -1.75,0.00 L 0.00,-1.75 L 1.75,0.00 L 0.00,1.75 L -1.75,0.00 " stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

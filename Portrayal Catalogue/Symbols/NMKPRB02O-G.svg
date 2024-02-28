@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="6.10mm" height="8.70mm" viewBox="-3.05 -5.46 6.12 8.72" xmlns="http://www.w3.org/2000/svg">
+  <title>NMKPRB02O-G</title>
+  <desc>no entry (A.1) on buoy - on position</desc>
+  <metadata />
+  <g>
+    <path class="fBLACK sBLACK" d="M 0.01,3.26 L -3.04,-1.09 L 0.01,-5.45 L 3.06,-1.09 L 0.01,3.26 L 0.01,2.91 L 2.81,-1.09 L 0.01,-5.10 L -2.80,-1.09 L 0.01,2.91 L 0.01,3.26 Z" stroke-width="0" />
+    <path class="fYLLOW sBLACK" d="M -1.67,0.39 L 1.26,0.39 L 1.26,-0.09 L 0.88,-0.09 L 0.68,-1.12 L -0.50,-1.12 L -1.29,-0.09 L -1.67,-0.09 L -1.67,0.39 Z" stroke-width="0.12" />
+    <path class="fMIDRD sMIDRD" d="M -1.21,-1.12 L 1.38,-1.12 L 1.63,-2.65 L -0.97,-2.65 L -1.21,-1.12 Z" stroke-width="0.04" />
+    <path class="fWHITE sWHITE" d="M -1.05,-2.14 L 1.55,-2.14 L 1.46,-1.63 L -1.13,-1.63 L -1.05,-2.14 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -1.21,-1.12 L 1.38,-1.12 L 1.63,-2.65 L -0.97,-2.65 L -1.21,-1.12 " stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

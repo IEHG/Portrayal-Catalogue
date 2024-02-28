@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="4.90mm" height="4.30mm" viewBox="-2.61 -2.15 4.92 4.32" xmlns="http://www.w3.org/2000/svg">
+  <title>NMKPRB02</title>
+  <desc>no entry (A.1) on buoy</desc>
+  <metadata />
+  <g>
+    <path class="fYLLOW sBLACK" d="M -2.60,2.16 L 1.52,2.16 L 1.52,1.48 L 0.99,1.48 L 0.70,0.04 L -0.96,0.04 L -2.13,1.48 L -2.60,1.48 L -2.60,2.16 Z" stroke-width="0.12" />
+    <path class="fMIDRD sMIDRD" d="M -1.84,0.04 L 1.56,0.04 L 2.30,-2.14 L -1.09,-2.14 L -1.84,0.04 Z" stroke-width="0.04" />
+    <path class="fWHITE sWHITE" d="M -1.36,-1.36 L 2.04,-1.36 L 1.83,-0.74 L -1.57,-0.74 L -1.36,-1.36 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -1.09,-2.14 L 2.30,-2.14 L 1.56,0.04 L -1.84,0.04 L -1.09,-2.14 " stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

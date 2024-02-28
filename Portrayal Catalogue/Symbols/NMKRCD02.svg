@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="4.80mm" height="2.20mm" viewBox="-2.41 -1.11 4.82 2.22" xmlns="http://www.w3.org/2000/svg">
+  <title>NMKRCD02</title>
+  <desc>recommended channel only in the direction indicated (D.1b)</desc>
+  <metadata />
+  <g>
+    <path class="fYLLOW sBLACK" d="M -2.40,0.00 L -1.29,-1.10 L -0.20,0.00 L -1.31,1.10 L -2.40,0.00 Z" stroke-width="0.12" />
+    <path class="fYLLOW sBLACK" d="M 0.20,0.00 L 1.31,-1.10 L 2.40,0.00 L 1.29,1.10 L 0.20,0.00 Z" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

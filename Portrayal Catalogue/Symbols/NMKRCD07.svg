@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="10.20mm" height="8.62mm" viewBox="-5.11 -8.28 10.22 8.64" xmlns="http://www.w3.org/2000/svg">
+  <title>NMKRCD07</title>
+  <desc>you are recommended to proceed in the left direction (D.3), orientation encoded</desc>
+  <metadata />
+  <g>
+    <path class="fAZUBL sAZUBL" d="M -5.10,-1.27 L -5.10,-8.27 L 5.10,-8.27 L 5.10,-1.27 L -5.10,-1.27 Z" stroke-width="0.04" />
+    <circle cx="0.00" cy="0.00" r="0.35" class="f0 sBLACK" stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.00,-0.35 L 0.00,-1.27 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -0.59,0.00 L -0.35,0.00 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.35,0.00 L 0.59,0.00 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -5.10,-1.27 L -5.10,-8.27 L 5.10,-8.27 L 5.10,-1.27 L -5.10,-1.27 " stroke-width="0.12" />
+    <path class="fWHITE sWHITE" d="M -1.70,-5.19 L 3.81,-5.19 L 3.81,-4.21 L -1.69,-4.21 L -1.42,-3.44 L -1.75,-3.20 L -3.86,-4.71 L -1.70,-6.23 L -1.40,-5.96 L -1.70,-5.19 Z" stroke-width="0.04" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>
