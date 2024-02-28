@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="4.30mm" height="6.09mm" viewBox="-2.06 -6.10 4.32 6.11" xmlns="http://www.w3.org/2000/svg">
+  <title>BOYCARWB</title>
+  <desc>Buoy cardinal west, beacon</desc>
+  <metadata />
+  <g>
+    <path class="fYLLOW sYLLOW" d="M -0.35,-2.00 L 0.21,-3.00 L 1.28,-3.00 L 1.19,-2.00 L -0.35,-2.00 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M -0.89,-1.04 L -0.35,-2.00 L 1.19,-2.00 L 1.10,-1.04 L 1.10,-1.04 L -0.89,-1.04 Z" stroke-width="0.04" />
+    <path class="fYLLOW sYLLOW" d="M -0.89,-1.04 L 1.10,-1.04 L 2.05,-0.65 L 2.05,0.00 L -2.05,0.00 L -2.05,-0.65 L -0.89,-1.04 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -2.05,0.00 L -2.05,-0.65 L -0.89,-1.04 L 0.21,-3.00 L 1.28,-3.00 L 1.10,-1.04 L 2.05,-0.65 L 2.05,0.00 L -2.05,0.00 Z" stroke-width="0.12" />
+    <path class="fBLACK sBLACK" d="M 0.75,-6.09 L 2.25,-6.09 L 1.26,-5.10 L 0.75,-6.09 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M 1.68,-3.71 L 0.18,-3.71 L 1.17,-4.71 L 1.68,-3.71 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -0.35,-2.00 L 1.19,-2.00 " stroke-width="0.04" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

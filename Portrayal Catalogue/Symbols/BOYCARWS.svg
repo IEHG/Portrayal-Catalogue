@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="2.02mm" height="5.40mm" viewBox="-0.75 -5.41 2.04 5.42" xmlns="http://www.w3.org/2000/svg">
+  <title>BOYCARWS</title>
+  <desc>Buoy cardinal west, spar</desc>
+  <metadata />
+  <g>
+    <path class="fYLLOW sYLLOW" d="M -0.56,-1.80 L 0.92,-1.80 L 0.74,0.00 L -0.74,0.00 L -0.56,-1.80 Z" stroke-width="0.04" />
+    <path class="fYLLOW sYLLOW" d="M -0.39,-3.60 L -0.21,-5.40 L 1.28,-5.40 L 1.10,-3.60 L -0.39,-3.60 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M -0.56,-1.80 L -0.39,-3.60 L 1.10,-3.60 L 0.92,-1.80 L -0.56,-1.80 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -0.21,-5.40 L 1.28,-5.40 L 0.74,0.00 L -0.74,0.00 L -0.21,-5.40 Z" stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -0.21,-5.40 L 1.28,-5.40 " stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -0.39,-3.60 L 1.09,-3.60 " stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -0.56,-1.80 L 0.91,-1.80 " stroke-width="0.04" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

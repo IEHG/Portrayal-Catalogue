@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="1.00mm" height="1.00mm" viewBox="-0.51 -0.51 1.02 1.02" xmlns="http://www.w3.org/2000/svg">
+  <title>DISMAR05</title>
+  <desc>distance mark on river axis</desc>
+  <metadata />
+  <g>
+    <circle cx="0.00" cy="0.00" r="0.50" class="fWHITE sBLACK" stroke-width="0.08" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

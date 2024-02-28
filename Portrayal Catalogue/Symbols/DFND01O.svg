@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="6.10mm" height="8.70mm" viewBox="-3.04 -5.41 6.12 8.72" xmlns="http://www.w3.org/2000/svg">
+  <title>DFND01O</title>
+  <desc>buoy berth right-hand side - on position</desc>
+  <metadata />
+  <g>
+    <path class="fORRED sBLACK" d="M -1.96,-0.15 L -1.96,-0.76 L -1.28,-1.09 L -1.28,-2.53 L 1.24,-2.53 L 1.24,-1.09 L 1.92,-0.76 L 1.92,-0.15 L -1.96,-0.15 Z" stroke-width="0.12" />
+    <path class="fBLACK sBLACK" d="M 0.02,3.30 L -3.03,-1.05 L 0.02,-5.40 L 3.07,-1.05 L 0.02,3.30 L 0.02,2.95 L 2.82,-1.05 L 0.02,-5.06 L -2.79,-1.05 L 0.02,2.95 L 0.02,3.30 Z" stroke-width="0" />
+    <path class="fWHITE sWHITE" d="M -0.51,-2.16 L -0.51,-0.52 L -0.21,-0.52 L -0.21,-2.16 L -0.51,-2.16 Z" stroke-width="0.04" />
+    <path class="fWHITE sWHITE" d="M -0.21,-2.16 L 0.09,-2.16 L 0.16,-2.15 L 0.22,-2.14 L 0.26,-2.14 L 0.30,-2.13 L 0.34,-2.11 L 0.39,-2.09 L 0.44,-2.05 L 0.50,-1.99 L 0.54,-1.90 L 0.57,-1.81 L 0.59,-1.68 L 0.59,-1.57 L 0.58,-1.49 L 0.55,-1.41 L 0.52,-1.35 L 0.48,-1.30 L 0.42,-1.24 L 0.36,-1.20 L 0.28,-1.17 L 0.20,-1.15 L 0.12,-1.14 L 0.06,-1.14 L -0.21,-1.14 L -0.21,-1.42 L -0.09,-1.42 L 0.04,-1.42 L 0.12,-1.43 L 0.18,-1.45 L 0.22,-1.48 L 0.25,-1.52 L 0.28,-1.57 L 0.29,-1.62 L 0.29,-1.67 L 0.28,-1.72 L 0.27,-1.75 L 0.25,-1.79 L 0.22,-1.82 L 0.19,-1.84 L 0.16,-1.86 L 0.13,-1.87 L 0.08,-1.87 L 0.00,-1.88 L -0.21,-1.88 L -0.21,-2.16 Z" stroke-width="0.04" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

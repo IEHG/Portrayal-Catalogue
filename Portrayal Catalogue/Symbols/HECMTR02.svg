@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="1.50mm" height="1.50mm" viewBox="-0.76 -0.76 1.52 1.52" xmlns="http://www.w3.org/2000/svg">
+  <title>HECMTR02</title>
+  <desc>hectometre point, 1km</desc>
+  <metadata />
+  <g>
+    <path class="fVIOLT sVIOLT" d="M 0.00,0.75 L -0.75,0.00 L 0.00,-0.75 L 0.75,0.00 L 0.00,0.75 Z" stroke-width="0" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

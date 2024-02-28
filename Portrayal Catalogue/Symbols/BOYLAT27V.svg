@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="6.10mm" height="8.70mm" viewBox="-2.75 -7.13 6.12 8.72" xmlns="http://www.w3.org/2000/svg">
+  <title>BOYLAT27V</title>
+  <desc>river buoy, obstruction at the left side - virtual</desc>
+  <metadata />
+  <g>
+    <path class="fWHITE sWHITE" d="M -0.60,-0.53 L 0.61,-0.53 L 1.04,-4.97 L -0.16,-4.97 L -0.60,-0.53 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M -0.70,-5.35 L 0.30,-6.77 L 1.29,-5.36 L 1.45,-5.48 L 0.30,-7.12 L -0.86,-5.46 L -0.70,-5.35 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M -1.53,-1.38 L -2.50,-2.77 L -1.57,-4.09 L -1.74,-4.20 L -2.74,-2.77 L -1.70,-1.27 L -1.53,-1.38 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M 2.38,-4.15 L 3.36,-2.77 L 2.24,-1.17 L 2.08,-1.29 L 3.11,-2.77 L 2.22,-4.04 L 2.38,-4.15 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M 1.41,-0.01 L 0.30,1.58 L -0.75,0.07 L -0.59,-0.04 L 0.30,1.23 L 1.25,-0.12 L 1.41,-0.01 Z" stroke-width="0.04" />
+    <path class="fMIDGN sMIDGN" d="M -0.16,-4.97 L 1.04,-4.97 L 0.93,-3.84 L -0.28,-3.84 L -0.16,-4.97 Z" stroke-width="0.04" />
+    <path class="fMIDGN sMIDGN" d="M -0.39,-2.74 L 0.82,-2.74 L 0.71,-1.61 L -0.50,-1.61 L -0.39,-2.74 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -0.16,-4.97 L 1.04,-4.97 L 0.61,-0.53 L -0.60,-0.53 L -0.16,-4.97 Z" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

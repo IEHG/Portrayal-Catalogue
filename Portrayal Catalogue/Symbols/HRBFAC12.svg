@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="3.40mm" height="3.40mm" viewBox="-1.71 -1.71 3.42 3.42" xmlns="http://www.w3.org/2000/svg">
+  <title>HRBFAC12</title>
+  <desc>harbour facility ship yard</desc>
+  <metadata />
+  <g>
+    <circle cx="0.00" cy="0.00" r="1.70" class="fLITGY sBLACK" stroke-width="0.08" />
+    <path class="fBLACK sBLACK" d="M -0.54,-0.77 L -0.07,0.18 L -0.07,0.74 L 0.04,0.74 L 0.04,0.17 L 0.53,-0.77 L 0.40,-0.77 L -0.01,0.06 L -0.41,-0.77 L -0.54,-0.77 Z" stroke-width="0" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

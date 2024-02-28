@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="3.40mm" height="3.40mm" viewBox="-1.71 -1.71 3.42 3.42" xmlns="http://www.w3.org/2000/svg">
+  <title>HRBFAC11</title>
+  <desc>harbour facility naval base</desc>
+  <metadata />
+  <g>
+    <circle cx="0.00" cy="0.00" r="1.70" class="fLITGY sBLACK" stroke-width="0.08" />
+    <path class="fBLACK sBLACK" d="M -0.57,0.69 L -0.57,-0.82 L -0.47,-0.82 L 0.47,0.47 L 0.47,-0.82 L 0.58,-0.82 L 0.58,0.69 L 0.50,0.69 L -0.45,-0.61 L -0.45,0.69 L -0.57,0.69 Z" stroke-width="0" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="6.10mm" height="8.70mm" viewBox="-3.02 -5.11 6.12 8.72" xmlns="http://www.w3.org/2000/svg">
+  <title>BOYINL02O</title>
+  <desc>river buoy left-hand side of the fairway (2.B of CEVNI) - on position</desc>
+  <metadata />
+  <g>
+    <path class="fMIDGN sBLACK" d="M -1.70,-0.11 L 1.79,-0.11 L 1.79,-0.65 L 1.32,-0.65 L 0.05,-2.67 L -1.22,-0.65 L -1.70,-0.65 L -1.70,-0.11 Z" stroke-width="0.12" />
+    <path class="fMIDGN sBLACK" d="M -1.70,-0.11 L 1.79,-0.11 L 1.79,-0.65 L 1.32,-0.65 L 0.05,-2.67 L -1.22,-0.65 L -1.70,-0.65 L -1.70,-0.11 Z" stroke-width="0.12" />
+    <path class="fMIDGN sBLACK" d="M -1.70,-0.11 L 1.79,-0.11 L 1.79,-0.65 L 1.32,-0.65 L 0.05,-2.67 L -1.22,-0.65 L -1.70,-0.65 L -1.70,-0.11 Z" stroke-width="0.12" />
+    <path class="fBLACK sBLACK" d="M 0.04,3.61 L -3.01,-0.74 L 0.04,-5.10 L 3.09,-0.74 L 0.04,3.61 L 0.04,3.26 L 2.85,-0.74 L 0.04,-4.75 L -2.76,-0.74 L 0.04,3.26 L 0.04,3.61 Z" stroke-width="0" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

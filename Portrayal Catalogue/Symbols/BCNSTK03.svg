@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="1.40mm" height="4.00mm" viewBox="-0.71 -3.61 1.42 4.02" xmlns="http://www.w3.org/2000/svg">
+  <title>BCNSTK03</title>
+  <desc>river beacon, stake – pole</desc>
+  <metadata />
+  <g>
+    <path class="f0 sBLACK" d="M 0.00,-3.60 L 0.00,-0.33 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -0.70,0.00 L -0.33,0.00 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.33,0.00 L 0.70,0.00 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.00,0.20 L 0.00,0.40 " stroke-width="0.12" />
+    <circle cx="0.00" cy="0.00" r="0.33" class="fWHITE sBLACK" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

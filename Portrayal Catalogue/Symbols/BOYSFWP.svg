@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="2.00mm" height="5.40mm" viewBox="-0.75 -5.41 2.02 5.42" xmlns="http://www.w3.org/2000/svg">
+  <title>BOYSFWP</title>
+  <desc>Buoy safe water spar, parallel stripes</desc>
+  <metadata />
+  <g>
+    <path class="fWHITE sWHITE" d="M -0.74,0.00 L 0.74,0.00 L 1.26,-5.40 L -0.21,-5.40 L -0.74,0.00 Z" stroke-width="0.04" />
+    <path class="fORRED sBLACK" d="M -0.21,-5.40 L 1.26,-5.40 L 0.74,0.00 L -0.74,0.00 L -0.21,-5.40 Z" stroke-width="0.12" />
+    <path class="fWHITE sWHITE" d="M -0.21,-5.40 L 1.26,-5.40 L 1.13,-4.02 L -0.34,-4.02 L -0.21,-5.40 Z" stroke-width="0.12" />
+    <path class="fWHITE sWHITE" d="M -0.48,-2.69 L 0.99,-2.69 L 0.86,-1.31 L -0.61,-1.31 L -0.48,-2.69 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -0.21,-5.40 L -0.74,0.00 L 0.74,0.00 L 1.26,-5.40 L -0.21,-5.40 " stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

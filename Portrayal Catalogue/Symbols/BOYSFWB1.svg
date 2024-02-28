@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="4.10mm" height="4.59mm" viewBox="-2.06 -4.60 4.12 4.61" xmlns="http://www.w3.org/2000/svg">
+  <title>BOYSFWB1</title>
+  <desc>Buoy safe water, beacon, wider</desc>
+  <metadata />
+  <g>
+    <path class="fWHITE sWHITE" d="M -0.89,-1.04 L -1.19,-0.67 L -1.19,0.00 L -2.05,0.00 L -2.05,-0.65 L -0.89,-1.04 Z" stroke-width="0.12" />
+    <path class="fWHITE sBLACK" d="M -2.05,0.00 L -2.05,-0.65 L -0.89,-1.04 L 0.21,-3.00 L 1.28,-3.00 L 1.10,-1.04 L 2.05,-0.65 L 2.05,0.00 L -2.05,0.00 Z" stroke-width="0.12" />
+    <circle cx="1.01" cy="-4.05" r="0.55" class="fORRED sBLACK" stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.11,-1.04 L 0.75,-3.00 " stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -0.89,-1.04 L -1.19,-0.67 L -1.19,0.00 " stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M 1.10,-1.04 L 1.06,-0.65 L 1.06,0.00 " stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M 0.11,-1.04 L -0.01,-0.65 L -0.01,0.00 " stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M 1.28,-3.00 L 1.10,-1.04 " stroke-width="0.04" />
+    <path class="fORRED sBLACK" d="M 1.10,-1.04 L 1.06,-0.65 L 1.06,0.00 L 2.05,0.00 L 2.05,-0.65 L 1.10,-1.04 Z" stroke-width="0.12" />
+    <path class="fORRED sBLACK" d="M 0.11,-1.04 L 0.75,-3.00 L 0.21,-3.00 L -0.89,-1.04 L -1.19,-0.67 L -1.19,0.00 L -0.01,0.00 L -0.01,-0.65 L 0.11,-1.04 Z" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

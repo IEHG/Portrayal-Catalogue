@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="3.00mm" height="3.00mm" viewBox="-1.51 -1.51 3.02 3.02" xmlns="http://www.w3.org/2000/svg">
+  <title>CUSTOM01</title>
+  <desc>control point, custom</desc>
+  <metadata />
+  <g>
+    <circle cx="0.00" cy="0.00" r="1.50" class="fWHITE sMIDRD" stroke-width="0.12" />
+    <path class="fMIDRD sMIDRD" d="M -0.98,0.28 L 0.98,0.28 L 0.98,-0.28 L -0.98,-0.28 L -0.98,0.28 Z" stroke-width="0" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

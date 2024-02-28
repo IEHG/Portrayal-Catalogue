@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="3.70mm" height="3.10mm" viewBox="-1.87 -1.57 3.72 3.12" xmlns="http://www.w3.org/2000/svg">
+  <title>BUNSTA03</title>
+  <desc>bunker station, ballast</desc>
+  <metadata />
+  <g>
+    <path class="fLITGY sBLACK" d="M -1.86,1.54 L 0.54,1.54 L 1.84,0.26 L 1.84,-1.56 L -0.26,-1.56 L -1.86,-0.27 L -1.86,1.54 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M 0.54,1.54 L 0.54,-0.27 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.54,-0.27 L -1.86,-0.27 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -0.66,1.54 L -0.66,-0.27 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.54,0.62 L 1.84,-0.65 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 1.84,-1.56 L 0.54,-0.27 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -0.67,-0.27 L 0.78,-1.56 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -0.26,-1.56 L -1.86,-0.27 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -0.26,-1.56 L 1.84,-1.56 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 1.84,-1.56 L 1.84,0.26 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 1.84,0.26 L 0.54,1.54 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.54,1.54 L -1.86,1.54 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -1.86,1.54 L -1.86,-0.27 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -1.86,0.62 L 0.54,0.62 " stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

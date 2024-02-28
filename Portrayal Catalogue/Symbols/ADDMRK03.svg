@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="7.00mm" height="7.40mm" viewBox="-3.51 -0.01 7.02 7.42" xmlns="http://www.w3.org/2000/svg">
+  <title>ADDMRK03</title>
+  <desc>bottom (rectangle, portrait main board)</desc>
+  <metadata />
+  <g>
+    <path class="fWHITE sBLACK" d="M -3.50,5.10 L 3.50,5.10 L 3.50,7.40 L -3.50,7.40 L -3.50,5.10 Z" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>
