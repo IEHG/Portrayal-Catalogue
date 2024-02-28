@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="3.50mm" height="3.50mm" viewBox="-1.76 -1.76 3.52 3.52" xmlns="http://www.w3.org/2000/svg">
+  <title>350 x 350</title>
+  <desc>
+  </desc>
+  <metadata />
+  <g>
+    <path class="f0 sWHITE" d="M -1.75,1.75 L 1.75,1.75 L 1.75,-1.75 L -1.75,-1.75 L -1.75,1.75 Z" stroke-width="0.04" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>
