@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="7.00mm" height="10.20mm" viewBox="-3.51 -5.11 7.02 10.22" xmlns="http://www.w3.org/2000/svg">
+  <title>NOVRTK01A</title>
+  <desc>no overtaking (A.2) violet</desc>
+  <metadata />
+  <g>
+    <path class="f0 sE1FFFF" d="M -3.50,-4.48 L 3.08,5.10 " stroke-width="0" />
+    <path class="f0 sE1FFFF" d="M -3.08,-5.10 L 3.50,4.48 " stroke-width="0" />
+    <path class="fPURPL sPURPL" d="M -3.50,-4.48 L -3.50,-5.10 L -3.08,-5.10 L 3.50,4.48 L 3.50,5.10 L 3.08,5.10 L -3.50,-4.48 Z" stroke-width="0" />
+    <path class="fPURPL sPURPL" d="M 0.15,-2.71 L 0.15,-2.71 L 0.23,-2.63 L 0.20,-2.50 L 0.01,-2.69 L 1.52,-5.10 L 3.03,-2.68 L 2.85,-2.50 L 1.92,-2.85 L 1.93,-0.50 L 1.09,-0.50 L 1.09,-2.84 L 0.20,-2.50 L 0.23,-2.63 L 1.21,-3.01 L 1.21,-0.62 L 1.81,-0.62 L 1.81,-3.02 L 2.83,-2.63 L 2.90,-2.69 L 1.52,-4.88 L 0.15,-2.71 Z" stroke-width="0" />
+    <path class="fPURPL sPURPL" d="M -2.87,3.02 L -2.87,3.02 L -2.79,3.10 L -2.82,3.23 L -3.01,3.04 L -1.51,0.63 L 0.01,3.05 L -0.18,3.23 L -1.13,2.88 L -1.13,5.10 L -1.89,5.10 L -1.90,2.89 L -2.82,3.23 L -2.79,3.10 L -1.78,2.72 L -1.78,4.98 L -1.24,4.98 L -1.24,2.71 L -0.19,3.10 L -0.13,3.04 L -1.50,0.85 L -2.87,3.02 Z" stroke-width="0" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

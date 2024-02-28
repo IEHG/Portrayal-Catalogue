@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="5.20mm" height="5.20mm" viewBox="-2.61 -2.61 5.22 5.22" xmlns="http://www.w3.org/2000/svg">
+  <title>TERMNL04</title>
+  <desc>terminal, Bulk trans-shipment</desc>
+  <metadata />
+  <g>
+    <circle cx="0.00" cy="0.00" r="2.60" class="fLITGY sBLACK" stroke-width="0.08" />
+    <path class="f0 sBLACK" d="M -0.01,-2.60 L -0.01,-0.87 " stroke-width="0.08" />
+    <path class="fBLACK sBLACK" d="M -0.01,-0.87 L -2.03,-0.04 L -0.89,1.08 L -0.01,-0.87 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M -0.01,-0.87 L 1.97,-0.03 L 0.87,1.08 L -0.01,-0.87 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -2.03,-0.04 L -0.01,-2.11 " stroke-width="0.08" />
+    <path class="f0 sBLACK" d="M 1.97,-0.03 L -0.01,-2.11 " stroke-width="0.08" />
+    <path class="fMIDGY sMIDGY" d="M -1.12,2.09 L 1.03,2.09 L 0.96,1.81 L 0.67,1.81 L 0.19,0.92 L -0.24,0.92 L -0.66,1.81 L -1.06,1.81 L -1.12,2.09 Z" stroke-width="0.04" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="2.90mm" height="11.55mm" viewBox="-1.46 -11.16 2.92 11.57" xmlns="http://www.w3.org/2000/svg">
+  <title>SSF08</title>
+  <desc>signal station, form 08</desc>
+  <metadata />
+  <g>
+    <path class="f0 sBLACK" d="M 0.00,-2.45 L 0.00,-0.24 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -0.90,0.00 L -0.24,0.00 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.24,0.00 L 0.93,0.00 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.00,0.24 L 0.00,0.39 " stroke-width="0.12" />
+    <path class="fLITGY sBLACK" d="M -1.45,-11.15 L 1.45,-11.15 L 1.45,-2.45 L -1.45,-2.45 L -1.45,-11.15 Z" stroke-width="0.12" />
+    <circle cx="0.00" cy="0.00" r="0.24" class="fWHITE sBLACK" stroke-width="0.12" />
+    <circle cx="0.00" cy="-3.90" r="1.09" class="flight3 sBLACK" stroke-width="0.12" />
+    <circle cx="0.00" cy="-6.80" r="1.09" class="flight2 sBLACK" stroke-width="0.12" />
+    <circle cx="0.00" cy="-9.70" r="1.09" class="flight1 sBLACK" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

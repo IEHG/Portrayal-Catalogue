@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="8.00mm" height="6.93mm" viewBox="-4.01 -2.32 8.02 6.95" xmlns="http://www.w3.org/2000/svg">
+  <title>SENSOR</title>
+  <desc>sensor</desc>
+  <metadata />
+  <g>
+    <path class="f0 sBLACK" d="M 0.00,4.62 L 0.00,4.62 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.00,0.00 L 0.00,0.00 " stroke-width="0.12" />
+    <path class="fWHITE sBLACK" d="M 0.00,4.62 L -4.00,-2.31 L 4.00,-2.31 L 0.00,4.62 Z" stroke-width="0.12" />
+    <path class="f0 sMIDBL" d="M 1.30,-2.31 L -1.35,2.28 " stroke-width="0.12" />
+    <path class="f0 sMIDBL" d="M 1.35,2.28 L -1.30,-2.31 " stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

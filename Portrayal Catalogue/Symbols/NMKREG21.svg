@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="10.20mm" height="8.60mm" viewBox="-5.11 -8.28 10.22 8.62" xmlns="http://www.w3.org/2000/svg">
+  <title>NMKREG21</title>
+  <desc>proceed in left direction (B.1), orientation encoded</desc>
+  <metadata />
+  <g>
+    <path class="fMIDRD sBLACK" d="M -5.10,-8.27 L 5.10,-8.27 L 5.10,-1.27 L -5.10,-1.27 L -5.10,-8.27 Z" stroke-width="0.12" />
+    <path class="fWHITE sWHITE" d="M -4.29,-7.26 L 4.29,-7.26 L 4.29,-2.27 L -4.29,-2.27 L -4.29,-7.26 Z" stroke-width="0.08" />
+    <path class="fBLACK sBLACK" d="M -2.07,-4.34 L 3.61,-4.34 L 3.61,-4.98 L -2.06,-4.98 L -2.01,-5.18 L -1.95,-5.41 L -1.91,-5.57 L -2.09,-5.71 L -3.54,-4.66 L -2.08,-3.61 L -1.89,-3.77 L -1.97,-4.04 L -2.07,-4.34 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M 0.00,-1.27 L 0.00,-0.33 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -0.61,0.00 L -0.33,0.00 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.33,0.00 L 0.61,0.00 " stroke-width="0.12" />
+    <circle cx="0.00" cy="0.00" r="0.33" class="fWHITE sBLACK" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

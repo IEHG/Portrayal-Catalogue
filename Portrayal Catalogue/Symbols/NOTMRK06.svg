@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="2.70mm" height="2.70mm" viewBox="-1.21 -1.51 2.72 2.72" xmlns="http://www.w3.org/2000/svg">
+  <title>NOTMRK06</title>
+  <desc>several notice marks, only information and/or recommendation marks</desc>
+  <metadata />
+  <g>
+    <path class="fWHITE sBLACK" d="M -0.66,-1.50 L 1.50,-1.50 L 1.50,0.63 L -0.66,0.63 L -0.66,-1.50 Z" stroke-width="0.12" />
+    <path class="fDRKBL sBLACK" d="M -1.20,1.20 L 1.20,1.20 L 1.20,-1.20 L -1.20,-1.20 L -1.20,1.20 Z" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

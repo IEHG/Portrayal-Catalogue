@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="3.30mm" height="2.00mm" viewBox="-1.66 -1.01 3.32 2.02" xmlns="http://www.w3.org/2000/svg">
+  <title>SSLOCK01</title>
+  <desc>signal station, lock</desc>
+  <metadata />
+  <g>
+    <path class="fWHITE sBLACK" d="M -1.65,-1.00 L 1.65,-1.00 L 1.65,1.00 L -1.65,1.00 L -1.65,-1.00 Z" stroke-width="0.12" />
+    <circle cx="0.71" cy="0.01" r="0.45" class="f0 sBLACK" stroke-width="0.12" />
+    <circle cx="-0.73" cy="0.01" r="0.45" class="fBLACK sBLACK" stroke-width="0.04" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

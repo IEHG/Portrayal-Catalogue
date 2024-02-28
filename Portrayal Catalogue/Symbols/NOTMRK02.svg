@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="2.40mm" height="2.40mm" viewBox="-1.21 -1.21 2.42 2.42" xmlns="http://www.w3.org/2000/svg">
+  <title>NOTMRK02</title>
+  <desc>notice mark, regulation, restriction</desc>
+  <metadata />
+  <g>
+    <path class="fMIDRD sBLACK" d="M -1.20,1.20 L 1.20,1.20 L 1.20,-1.20 L -1.20,-1.20 L -1.20,1.20 Z" stroke-width="0.12" />
+    <path class="fWHITE sWHITE" d="M -0.57,-0.57 L 0.58,-0.57 L 0.58,0.59 L -0.57,0.59 L -0.57,-0.57 Z" stroke-width="0.04" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

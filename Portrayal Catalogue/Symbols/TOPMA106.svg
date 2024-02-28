@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="2.30mm" height="4.80mm" viewBox="-1.16 -4.81 2.32 4.82" xmlns="http://www.w3.org/2000/svg">
+  <title>TOPMA106</title>
+  <desc>beacon top mark, white-red square board, vertical</desc>
+  <metadata />
+  <g>
+    <path class="fWHITE sWHITE" d="M -1.15,-4.80 L 1.15,-4.80 L 1.15,-2.50 L -1.15,-2.50 L -1.15,-4.80 Z" stroke-width="0.04" />
+    <path class="fMIDRD sMIDRD" d="M -1.15,-4.28 L 1.15,-4.28 L 1.15,-3.02 L -1.15,-3.02 L -1.15,-4.28 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -1.15,-4.80 L -1.15,-2.50 L 1.15,-2.50 L 1.15,-4.80 L -1.15,-4.80 Z" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

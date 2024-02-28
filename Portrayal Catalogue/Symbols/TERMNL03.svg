@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="5.20mm" height="5.20mm" viewBox="-2.61 -2.61 5.22 5.22" xmlns="http://www.w3.org/2000/svg">
+  <title>TERMNL03</title>
+  <desc>terminal, Container trans-shipment</desc>
+  <metadata />
+  <g>
+    <circle cx="0.00" cy="0.00" r="2.60" class="fLITGY sBLACK" stroke-width="0.08" />
+    <path class="fLTGRN sBLACK" d="M -0.51,0.53 L 0.42,0.53 L 0.42,1.47 L -0.51,1.47 L -0.51,0.53 Z" stroke-width="0.08" />
+    <path class="fMIDRD sBLACK" d="M -0.51,-0.37 L -1.38,-0.37 L -1.38,0.53 L -0.51,0.53 L -0.51,-0.37 Z" stroke-width="0.08" />
+    <path class="fMIDRD sBLACK" d="M -0.51,-0.37 L 0.66,-1.48 L -0.21,-1.48 L -1.38,-0.37 L -0.51,-0.37 Z" stroke-width="0.08" />
+    <path class="fMIDRD sBLACK" d="M -0.51,-0.37 L -0.51,0.53 L 0.66,-0.58 L 0.66,-1.48 L -0.51,-0.37 Z" stroke-width="0.04" />
+    <path class="fLTGRN sBLACK" d="M -0.51,0.53 L 0.66,-0.58 L 1.59,-0.58 L 0.42,0.53 L -0.51,0.53 Z" stroke-width="0.08" />
+    <path class="fLTGRN sBLACK" d="M 0.42,0.53 L 1.59,-0.58 L 1.59,0.36 L 0.42,1.47 L 0.42,0.53 Z" stroke-width="0.08" />
+    <path class="fLITGY sBLACK" d="M -1.38,0.53 L -0.51,0.53 L -0.51,1.47 L -1.38,1.47 L -1.38,0.53 Z" stroke-width="0.08" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

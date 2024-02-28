@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="2.80mm" height="5.50mm" viewBox="-1.41 -2.76 2.82 5.52" xmlns="http://www.w3.org/2000/svg">
+  <title>NMKREG51</title>
+  <desc>wreck pontoon, passage allowed on both sides </desc>
+  <metadata />
+  <g>
+    <path class="fYLLOW sBLACK" d="M -1.40,-2.75 L -1.40,-1.60 L 1.40,-1.60 L 1.40,-2.75 L -1.40,-2.75 Z" stroke-width="0.12" />
+    <path class="fMIDRD sBLACK" d="M 0.00,0.00 L 1.40,0.00 L 1.40,-1.60 L 0.00,-1.60 L 0.00,0.00 Z" stroke-width="0.12" />
+    <path class="fWHITE sBLACK" d="M 1.40,0.00 L 0.00,0.00 L 0.00,1.60 L 1.40,1.60 L 1.40,0.00 Z" stroke-width="0.12" />
+    <path class="fYLLOW sBLACK" d="M -1.40,2.75 L 1.40,2.75 L 1.40,1.60 L -1.40,1.60 L -1.40,2.75 Z" stroke-width="0.12" />
+    <path class="fMIDRD sBLACK" d="M -1.40,0.00 L 0.00,0.00 L 0.00,-1.60 L -1.40,-1.60 L -1.40,0.00 Z" stroke-width="0.12" />
+    <path class="fWHITE sBLACK" d="M 0.00,0.00 L -1.40,0.00 L -1.40,1.60 L 0.00,1.60 L 0.00,0.00 Z" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

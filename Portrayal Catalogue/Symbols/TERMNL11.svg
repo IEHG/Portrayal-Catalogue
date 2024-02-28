@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="5.20mm" height="5.20mm" viewBox="-2.61 -2.61 5.22 5.22" xmlns="http://www.w3.org/2000/svg">
+  <title>TERMNL11</title>
+  <desc>terminal, Car trans-shipment</desc>
+  <metadata />
+  <g>
+    <circle cx="0.00" cy="0.00" r="2.60" class="fLITGY sBLACK" stroke-width="0.08" />
+    <path class="fBLACK sBLACK" d="M -1.88,0.38 L 1.84,0.38 L 1.84,-0.18 L 1.62,-0.40 L -1.53,-0.39 L -1.89,-0.09 L -1.88,0.38 Z" stroke-width="0.04" />
+    <circle cx="-1.04" cy="0.41" r="0.40" class="fBLACK sBLACK" stroke-width="0.04" />
+    <circle cx="1.10" cy="0.41" r="0.39" class="fBLACK sBLACK" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -0.81,-0.39 L -0.21,-1.06 " stroke-width="0.08" />
+    <path class="f0 sBLACK" d="M -0.21,-1.06 L 0.86,-1.06 " stroke-width="0.08" />
+    <path class="f0 sBLACK" d="M 0.86,-1.06 L 1.18,-0.74 " stroke-width="0.08" />
+    <path class="f0 sBLACK" d="M 1.18,-0.74 L 1.18,-0.40 " stroke-width="0.08" />
+    <path class="f0 sBLACK" d="M 0.53,-1.07 L 0.53,-0.40 " stroke-width="0.08" />
+    <path class="f0 sBLACK" d="M -0.10,-1.06 L -0.10,-0.40 " stroke-width="0.08" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

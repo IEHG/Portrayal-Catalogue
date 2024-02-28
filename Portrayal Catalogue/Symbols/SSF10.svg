@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="4.35mm" height="15.90mm" viewBox="-2.18 -15.51 4.37 15.92" xmlns="http://www.w3.org/2000/svg">
+  <title>SSF10</title>
+  <desc>signal station, form 10</desc>
+  <metadata />
+  <g>
+    <path class="f0 sBLACK" d="M 0.00,-2.45 L 0.00,-0.24 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -0.90,0.00 L -0.24,0.00 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.24,0.00 L 0.93,0.00 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.00,0.24 L 0.00,0.39 " stroke-width="0.12" />
+    <path class="fLITGY sBLACK" d="M -2.17,-6.80 L 2.17,-6.80 L 2.17,-2.45 L -2.17,-2.45 L -2.17,-6.80 Z" stroke-width="0.12" />
+    <circle cx="0.00" cy="0.00" r="0.24" class="fWHITE sBLACK" stroke-width="0.12" />
+    <path class="flight9 sBLACK" d="M -1.08,-3.18 L 1.08,-3.18 L 1.08,-3.75 L -1.08,-3.75 L -1.08,-3.18 Z" stroke-width="0.12" />
+    <path class="flight7 sBLACK" d="M -1.18,-3.92 L -0.10,-5.79 L -0.59,-6.07 L -1.67,-4.20 L -1.18,-3.92 Z" stroke-width="0.12" />
+    <path class="flight8 sBLACK" d="M 0.10,-5.79 L 1.18,-3.92 L 1.67,-4.20 L 0.59,-6.07 L 0.10,-5.79 Z" stroke-width="0.12" />
+    <path class="fLITGY sBLACK" d="M -2.17,-11.15 L 2.17,-11.15 L 2.17,-6.80 L -2.17,-6.80 L -2.17,-11.15 Z" stroke-width="0.12" />
+    <path class="flight6 sBLACK" d="M -1.08,-7.53 L 1.08,-7.53 L 1.08,-8.10 L -1.08,-8.10 L -1.08,-7.53 Z" stroke-width="0.12" />
+    <path class="flight4 sBLACK" d="M -1.18,-8.27 L -0.10,-10.14 L -0.59,-10.42 L -1.67,-8.55 L -1.18,-8.27 Z" stroke-width="0.12" />
+    <path class="flight5 sBLACK" d="M 0.10,-10.14 L 1.18,-8.27 L 1.67,-8.55 L 0.59,-10.42 L 0.10,-10.14 Z" stroke-width="0.12" />
+    <path class="fLITGY sBLACK" d="M -2.17,-15.50 L 2.17,-15.50 L 2.17,-11.15 L -2.17,-11.15 L -2.17,-15.50 Z" stroke-width="0.12" />
+    <path class="flight3 sBLACK" d="M -1.08,-11.88 L 1.08,-11.88 L 1.08,-12.45 L -1.08,-12.45 L -1.08,-11.88 Z" stroke-width="0.12" />
+    <path class="flight1 sBLACK" d="M -1.18,-12.62 L -0.10,-14.49 L -0.59,-14.77 L -1.67,-12.90 L -1.18,-12.62 Z" stroke-width="0.12" />
+    <path class="flight2 sBLACK" d="M 0.10,-14.49 L 1.18,-12.62 L 1.67,-12.90 L 0.59,-14.77 L 0.10,-14.49 Z" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

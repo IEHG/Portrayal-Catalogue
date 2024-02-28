@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="6.10mm" height="8.70mm" viewBox="-2.93 -5.50 6.12 8.72" xmlns="http://www.w3.org/2000/svg">
+  <title>SIGFLT01O</title>
+  <desc>signal float - on position</desc>
+  <metadata />
+  <g>
+    <path class="fYLLOW sBLACK" d="M -1.94,-1.37 L 2.21,-1.37 L 1.45,-0.43 L -1.18,-0.43 L -1.94,-1.37 Z" stroke-width="0.12" />
+    <path class="fBLACK sBLACK" d="M 0.13,3.22 L -2.92,-1.14 L 0.13,-5.49 L 3.18,-1.14 L 0.13,3.22 L 0.13,2.87 L 2.94,-1.14 L 0.13,-5.14 L -2.67,-1.14 L 0.13,2.87 L 0.13,3.22 Z" stroke-width="0" />
+    <path class="f0 sBLACK" d="M 0.13,-2.54 L 0.13,-1.37 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -1.59,-0.43 L -0.07,-0.43 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.34,-0.43 L 1.86,-0.43 " stroke-width="0.12" />
+    <circle cx="0.13" cy="-0.43" r="0.21" class="fWHITE sBLACK" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

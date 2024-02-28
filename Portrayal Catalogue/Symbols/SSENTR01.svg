@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="2.90mm" height="5.70mm" viewBox="-1.46 -5.31 2.92 5.72" xmlns="http://www.w3.org/2000/svg">
+  <title>SSENTR01</title>
+  <desc>port entry</desc>
+  <metadata />
+  <g>
+    <path class="fWHITE sBLACK" d="M -1.45,-5.30 L 1.45,-5.30 L 1.45,-2.43 L -1.45,-2.43 L -1.45,-5.30 Z" stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.00,-2.43 L 0.00,-0.31 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -0.96,0.00 L -0.31,0.00 " stroke-width="0.12" />
+    <circle cx="0.00" cy="0.00" r="0.31" class="fWHITE sBLACK" stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.00,0.31 L 0.00,0.40 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M 0.31,0.00 L 0.96,0.00 " stroke-width="0.12" />
+    <path class="f0 sBLACK" d="M -0.94,-4.78 L 0.96,-3.80 L -0.94,-2.88 " stroke-width="0.12" />
+    <circle cx="-0.67" cy="-3.84" r="0.30" class="f0 sBLACK" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>
