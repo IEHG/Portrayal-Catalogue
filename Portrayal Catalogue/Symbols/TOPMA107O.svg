@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="6.10mm" height="8.70mm" viewBox="-3.05 -8.11 6.12 8.72" xmlns="http://www.w3.org/2000/svg">
+  <title>TOPMA107O</title>
+  <desc>beacon top mark, red boarded square board, vertical - on position
+</desc>
+  <metadata />
+  <g>
+    <path class="fMIDRD sBLACK" d="M -1.19,-2.56 L 1.19,-2.56 L 1.19,-4.94 L -1.19,-4.94 L -1.19,-2.56 Z" stroke-width="0.12" />
+    <path class="fBLACK sBLACK" d="M 0.01,0.61 L -3.04,-3.75 L 0.01,-8.10 L 3.06,-3.75 L 0.01,0.61 L 0.01,0.26 L 2.82,-3.75 L 0.01,-7.75 L -2.79,-3.75 L 0.01,0.26 L 0.01,0.61 Z" stroke-width="0" />
+    <path class="fWHITE sWHITE" d="M -0.72,-3.03 L 0.72,-3.03 L 0.72,-4.47 L -0.72,-4.47 L -0.72,-3.03 Z" stroke-width="0.04" />
+    <path class="fWHITE sWHITE" d="M -0.72,-3.03 L 0.72,-3.03 L 0.72,-4.47 L -0.72,-4.47 L -0.72,-3.03 Z" stroke-width="0.04" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

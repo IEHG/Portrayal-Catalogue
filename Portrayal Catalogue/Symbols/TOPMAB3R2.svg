@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="3.00mm" height="5.40mm" viewBox="-1.51 -5.41 3.02 5.42" xmlns="http://www.w3.org/2000/svg">
+  <title>TOPMAB3R2</title>
+  <desc>BinSchStrO, Anl. 8, VII.B.3 right, catlam 25</desc>
+  <metadata />
+  <g>
+    <path class="f0 sWHITE" d="M -0.17,-2.57 L -1.50,-3.90 L -0.17,-5.23 " stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M -1.17,-3.57 L -1.17,-4.23 L -0.83,-4.57 L -0.83,-3.23 L -1.17,-3.57 Z" stroke-width="0" />
+    <path class="fBLACK sBLACK" d="M -0.50,-2.90 L -0.50,-4.90 L -0.17,-5.23 L -0.17,-2.57 L -0.50,-2.90 Z" stroke-width="0" />
+    <path class="fBLACK sBLACK" d="M 0.17,-2.57 L 0.17,-5.23 L 0.50,-4.90 L 0.50,-2.90 L 0.17,-2.57 Z" stroke-width="0" />
+    <path class="fBLACK sBLACK" d="M 0.83,-3.23 L 0.83,-4.57 L 1.17,-4.23 L 1.17,-3.57 L 0.83,-3.23 Z" stroke-width="0" />
+    <path class="f0 sBLACK" d="M -1.50,-3.90 L 0.00,-5.40 L 1.50,-3.90 L 0.00,-2.40 L -1.50,-3.90 " stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

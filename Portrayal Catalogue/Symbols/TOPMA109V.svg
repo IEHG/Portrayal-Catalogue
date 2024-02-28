@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="6.10mm" height="8.70mm" viewBox="-3.05 -8.26 6.12 8.72" xmlns="http://www.w3.org/2000/svg">
+  <title>TOPMA109V</title>
+  <desc>beacon top mark, green boarded square board, diagonal - virtual</desc>
+  <metadata />
+  <g>
+    <path class="fLTGRN sBLACK" d="M -1.57,-3.90 L 0.00,-5.46 L 1.54,-3.90 L 0.00,-2.34 L -1.57,-3.90 Z" stroke-width="0.12" />
+    <path class="fBLACK sBLACK" d="M -1.83,-2.51 L -2.80,-3.89 L -1.87,-5.22 L -2.03,-5.33 L -3.04,-3.89 L -1.99,-2.40 L -1.83,-2.51 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M 2.09,-5.28 L 3.06,-3.89 L 1.94,-2.30 L 1.78,-2.42 L 2.81,-3.89 L 1.92,-5.17 L 2.09,-5.28 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M -1.00,-6.47 L 0.00,-7.90 L 0.99,-6.49 L 1.16,-6.61 L 0.00,-8.25 L -1.16,-6.59 L -1.00,-6.47 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M 1.11,-1.13 L 0.00,0.45 L -1.05,-1.05 L -0.89,-1.17 L 0.00,0.10 L 0.95,-1.25 L 1.11,-1.13 Z" stroke-width="0.04" />
+    <path class="fWHITE sWHITE" d="M 0.01,-3.15 L 0.76,-3.89 L 0.01,-4.65 L -0.74,-3.91 L 0.01,-3.15 Z" stroke-width="0.04" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

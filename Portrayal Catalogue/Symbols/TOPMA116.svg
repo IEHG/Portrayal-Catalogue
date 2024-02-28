@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="2.40mm" height="4.60mm" viewBox="-0.41 -4.61 2.42 4.62" xmlns="http://www.w3.org/2000/svg">
+  <title>TOPMA116</title>
+  <desc>buoy top mark, red-white-red board, entry prohibited</desc>
+  <metadata />
+  <g>
+    <path class="f0 sBLACK" d="M 0.59,-2.81 L 0.52,-2.50 " stroke-width="0.12" />
+    <path class="fMIDRD sMIDRD" d="M -0.40,-2.81 L 1.58,-2.81 L 2.00,-4.60 L 0.04,-4.60 L -0.40,-2.81 Z" stroke-width="0.04" />
+    <path class="fWHITE sWHITE" d="M -0.12,-3.96 L 1.85,-3.96 L 1.73,-3.45 L -0.24,-3.45 L -0.12,-3.96 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M 0.04,-4.60 L 2.00,-4.60 L 1.58,-2.81 L -0.40,-2.81 L 0.04,-4.60 " stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

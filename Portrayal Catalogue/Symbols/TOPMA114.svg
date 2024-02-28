@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="1.50mm" height="4.60mm" viewBox="-0.36 -4.61 1.52 4.62" xmlns="http://www.w3.org/2000/svg">
+  <title>TOPMA114</title>
+  <desc>buoy top mark, red cylinder</desc>
+  <metadata />
+  <g>
+    <path class="f0 sBLACK" d="M 0.19,-3.37 L 0.14,-3.09 " stroke-width="0.12" />
+    <path class="fMIDRD sBLACK" d="M -0.35,-3.38 L 0.73,-3.38 L 1.15,-4.60 L 0.12,-4.60 L -0.35,-3.38 Z" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

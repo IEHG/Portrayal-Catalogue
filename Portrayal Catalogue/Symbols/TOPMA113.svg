@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="3.00mm" height="5.40mm" viewBox="-1.51 -5.41 3.02 5.42" xmlns="http://www.w3.org/2000/svg">
+  <title>TOPMA113</title>
+  <desc>beacon top mark, yellow Andreas-cross</desc>
+  <metadata />
+  <g>
+    <path class="f0 sBLACK" d="M 0.00,-3.33 L 0.00,-2.40 " stroke-width="0.12" />
+    <path class="fYLLOW sBLACK" d="M -1.50,-2.97 L -0.57,-3.90 L -1.50,-4.83 L -0.93,-5.40 L 0.00,-4.47 L 0.93,-5.40 L 1.50,-4.83 L 0.57,-3.90 L 1.50,-2.97 L 0.93,-2.40 L 0.00,-3.33 L -0.93,-2.40 L -1.50,-2.97 Z" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

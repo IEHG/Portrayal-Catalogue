@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="1.30mm" height="5.10mm" viewBox="-0.66 -4.46 1.32 5.12" xmlns="http://www.w3.org/2000/svg">
+  <title>WTLVGG02</title>
+  <desc>gauge, height of water</desc>
+  <metadata />
+  <g>
+    <path class="fWHITE sBLACK" d="M 0.65,0.50 L -0.65,0.50 L -0.65,-4.45 L 0.65,-4.45 L 0.65,0.50 Z" stroke-width="0.12" />
+    <path class="fBLACK sBLACK" d="M -0.65,-3.07 L -0.01,-3.07 L -0.01,-4.45 L -0.65,-4.45 L -0.65,-3.07 Z" stroke-width="0.12" />
+    <path class="fBLACK sBLACK" d="M 0.64,-1.85 L -0.01,-1.85 L -0.01,-3.07 L 0.64,-3.07 L 0.64,-1.85 Z" stroke-width="0.12" />
+    <path class="fBLACK sBLACK" d="M -0.01,-0.66 L -0.65,-0.66 L -0.65,-1.85 L -0.01,-1.85 L -0.01,-0.66 Z" stroke-width="0.12" />
+    <circle cx="0.00" cy="0.00" r="0.65" class="fWHITE sBLACK" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>

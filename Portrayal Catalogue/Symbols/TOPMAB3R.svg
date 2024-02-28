@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='S401Style.css'?>
+<svg version="1.2" baseProfile="tiny" width="3.00mm" height="5.40mm" viewBox="-1.51 -5.41 3.02 5.42" xmlns="http://www.w3.org/2000/svg">
+  <title>TOPMAB3R</title>
+  <desc>BinSchStrO, Anl. 8, VII.B.3 right, catlam 25</desc>
+  <metadata />
+  <g>
+    <path class="fWHITE sWHITE" d="M -1.50,-3.90 L 0.00,-5.40 L 1.50,-3.90 L 0.00,-2.40 L -1.50,-3.90 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M -1.09,-3.49 L -1.09,-4.31 L -0.85,-4.55 L -0.85,-3.25 L -1.09,-3.49 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M -0.60,-4.80 L -0.37,-5.03 L -0.37,-2.77 L -0.60,-3.00 L -0.60,-4.80 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M -0.12,-5.28 L 0.00,-5.40 L 0.12,-5.28 L 0.12,-2.52 L 0.00,-2.40 L -0.12,-2.52 L -0.12,-5.28 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M 0.36,-5.04 L 0.60,-4.80 L 0.60,-3.00 L 0.36,-2.76 L 0.36,-5.04 Z" stroke-width="0.04" />
+    <path class="fBLACK sBLACK" d="M 0.85,-4.55 L 1.09,-4.32 L 1.09,-3.49 L 0.85,-3.25 L 0.85,-4.55 Z" stroke-width="0.04" />
+    <path class="f0 sBLACK" d="M -1.50,-3.90 L 0.00,-5.40 L 1.50,-3.90 L 0.00,-2.40 L -1.50,-3.90 " stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>
