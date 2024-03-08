@@ -5,8 +5,6 @@
 function TrafficSeparationZone(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:ProhAre,102,102')
-
 	if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 25010
