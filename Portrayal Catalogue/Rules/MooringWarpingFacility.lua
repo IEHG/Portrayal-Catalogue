@@ -5,9 +5,7 @@
 -- Mooring/Warping facility main entry point.
 function MooringWarpingFacility(feature, featurePortrayal, contextParameters)
 	local viewingGroup
-
-	featurePortrayal:AddInstructions('AlertReference:NavHazard')
-
+	
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.categoryOfMooringWarpingFacility == 1 then
 			viewingGroup = 12410
