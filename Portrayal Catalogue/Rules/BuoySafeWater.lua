@@ -8,8 +8,6 @@ require 'TOPMAR01'
 function BuoySafeWater(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
-
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
 		viewingGroup = 27010
 		if contextParameters.RadarOverlay then
