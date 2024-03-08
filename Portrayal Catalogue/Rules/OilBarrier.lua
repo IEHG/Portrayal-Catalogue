@@ -5,8 +5,6 @@
 function OilBarrier(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard')
-
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		viewingGroup = 12410
 		if contextParameters.RadarOverlay then
