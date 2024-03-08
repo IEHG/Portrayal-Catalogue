@@ -8,8 +8,6 @@ require 'QUAPOS01'
 function LandArea(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:SafetyContour')
-
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
 		viewingGroup = 12010
