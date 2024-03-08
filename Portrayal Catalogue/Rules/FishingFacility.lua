@@ -6,8 +6,6 @@
 function FishingFacility(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard')
-
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.categoryOfFishingFacility == 1 then
 			viewingGroup = 26210
