@@ -5,8 +5,6 @@
 function PipelineOverhead(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard')
-
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		if feature.radarConspicuous then
 			viewingGroup = 12210
