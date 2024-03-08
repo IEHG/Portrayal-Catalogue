@@ -8,8 +8,6 @@ require 'RESTRN01'
 function InshoreTrafficZone(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:ProhAre,53013,53013')
-
 	if feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
 		viewingGroup = 25010
 		featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:15;DisplayPlane:UnderRADAR')
