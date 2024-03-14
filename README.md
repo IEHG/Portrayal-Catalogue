@@ -9,7 +9,7 @@ Information:
 
 #0021:  The S-101 scripts that could be copied one-on-one were uploaded in the folder 'Rules'.
 
-³0022:  The inland specific conditions without differences or questions were developed into scripts. Filenames start with an underscore '_'.
+#0022:  The inland specific conditions without differences or questions were developed into scripts. Filenames start with an underscore '_'.
 
 #003:  The Portrayal Catalogue XML must be developed manually (based on the S-101 PC)
 
