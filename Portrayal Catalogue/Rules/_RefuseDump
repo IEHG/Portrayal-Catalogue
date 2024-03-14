@@ -1,0 +1,21 @@
+-- Converter Version: 0.99
+-- Feature Catalogue Version: 1.1.0 (2024/03/13)
+--
+-- issues to solve: none
+--
+
+-- Refuse dump main entry point.
+function RefuseDump(feature, featurePortrayal, contextParameters)
+	local viewingGroup
+
+	if feature.PrimitiveType == PrimitiveType.Point then
+		-- Paper chart and symbolized points use the same symbolization
+		viewingGroup = 22410
+        featurePortrayal:AddInstructions('ViewingGroup:22410;DrawingPriority:21;DisplayPlane:OverRADAR')   
+        featurePortrayal:AddInstructions('PointInstruction:REFDMP01')
+	else
+		error('Invalid primitive type or mariner settings passed to portrayal')
+	end
+
+	return viewingGroup
+end

@@ -1,0 +1,90 @@
+-- Converter Version: 0.99
+-- Feature Catalogue Version: 1.1.0 (2024/03/13)
+--
+-- issues to solve: 
+--
+
+-- Terminal main entry point.
+function Terminal(feature, featurePortrayal, contextParameters)
+	local viewingGroup
+
+	if feature.PrimitiveType == PrimitiveType.Point then
+		-- Paper chart and symbolized points use the same symbolization
+		viewingGroup = 22420
+        featurePortrayal:AddInstructions('ViewingGroup:22420;DrawingPriority:21;DisplayPlane:OverRADAR')   
+        if contains(1, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL03')
+        elseif contains(2, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL04')
+        elseif contains(3, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL05')
+        elseif contains(4, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL06')
+        elseif contains(5, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL07')
+        elseif contains(6, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL08')
+        elseif contains(7, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL09')
+        elseif contains(8, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL10')
+        elseif contains(9, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL11')
+        elseif contains(1, feature.categoryOfHarbourFacility) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL13')
+        elseif contains(3, feature.categoryOfHarbourFacility) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL02')        
+        elseif contains(7, feature.categoryOfHarbourFacility) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL05')
+        elseif contains(8, feature.categoryOfHarbourFacility) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL01')
+        elseif contains(10, feature.categoryOfHarbourFacility) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL03')
+        elseif contains(11, feature.categoryOfHarbourFacility) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL04')
+        else
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL12')
+        end 
+	elseif feature.PrimitiveType == PrimitiveType.Surface then
+		-- Plain and symbolized boundaries use the same symbolization
+		viewingGroup = 22420
+        featurePortrayal:AddInstructions('ViewingGroup:22420;DrawingPriority:12;DisplayPlane:OverRADAR')  
+		featurePortrayal:AddInstructions('ColorFill:CHGRF,0.75')
+        if contains(1, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL03')
+        elseif contains(2, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL04')
+        elseif contains(3, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL05')
+        elseif contains(4, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL06')
+        elseif contains(5, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL07')
+        elseif contains(6, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL08')
+        elseif contains(7, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL09')
+        elseif contains(8, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL10')
+        elseif contains(9, feature.transshippingGoods) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL11')
+        elseif contains(1, feature.categoryOfHarbourFacility) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL13')
+        elseif contains(3, feature.categoryOfHarbourFacility) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL02')        
+        elseif contains(7, feature.categoryOfHarbourFacility) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL05')
+        elseif contains(8, feature.categoryOfHarbourFacility) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL01')
+        elseif contains(10, feature.categoryOfHarbourFacility) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL03')
+        elseif contains(11, feature.categoryOfHarbourFacility) then
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL04')
+        else
+            featurePortrayal:AddInstructions('PointInstruction:TERMNL12')
+        end 
+		error('Invalid primitive type or mariner settings passed to portrayal')
+	end
+
+	return viewingGroup
+end
