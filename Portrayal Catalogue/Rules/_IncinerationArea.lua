@@ -10,7 +10,7 @@ require 'RESTRN01'
 -- Anchor IncinerationArea main entry point.
 function IncinerationArea(feature, featurePortrayal, contextParameters)
 	local viewingGroup
-    if feature.PrimitiveType == PrimitiveType.Surface then
+    	if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 26250
 		if contextParameters.RadarOverlay then
@@ -18,8 +18,8 @@ function IncinerationArea(feature, featurePortrayal, contextParameters)
 		else
 			featurePortrayal:AddInstructions('ViewingGroup:26250;DrawingPriority:9;DisplayPlane:UnderRADAR')
 		end
-        featurePortrayal:AddInstructions('PointInstruction:INFRA51')
-        featurePortrayal:SimpleLineStyle('dash',0.30,'TRFCD')
+	        featurePortrayal:AddInstructions('PointInstruction:INFRA51')
+	        featurePortrayal:SimpleLineStyle('dash',0.30,'TRFCD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 	else
