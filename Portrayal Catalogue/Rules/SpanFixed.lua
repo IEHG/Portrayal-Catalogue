@@ -3,7 +3,6 @@
 -- UNOFFICIAL:  Rules extracted from S-52 lookup table for BRIDGE.
 
 function SpanFixed(feature, featurePortrayal, contextParameters)
-	featurePortrayal:AddInstructions('AlertReference:NavHazard')
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
