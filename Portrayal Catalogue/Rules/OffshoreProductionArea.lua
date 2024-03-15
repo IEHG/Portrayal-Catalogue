@@ -14,8 +14,6 @@ function OffshoreProductionArea(feature, featurePortrayal, contextParameters)
 
 	local COPA = feature.categoryOfOffshoreProductionArea
 
-	featurePortrayal:AddInstructions('AlertReference:ProhAre,53018,53018')
-
 	featurePortrayal:AddInstructions('ViewingGroup:'.. viewingGroup .. ';DrawingPriority:12;DisplayPlane:UnderRADAR')
 
 	if feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
