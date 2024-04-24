@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type='text/css' href='S401Style.css'?>
-<svg version="1.2" baseProfile="tiny" width="7.20mm" height="7.00mm" viewBox="-7.21 -3.51 7.22 7.02" xmlns="http://www.w3.org/2000/svg">
+<?xml-stylesheet type='text/css' href='svgStyle.css'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:S100SVGMeta="http://www.iho.int/SVGMetadata/5.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2000/svg https://staging.s100dev.net/schemas/S100/5.2.0/S100PC/20231201/S100SVG.xsd" version="1.2" baseProfile="tiny"width="7.20mm" height="7.00mm" viewBox="-7.21 -3.51 7.22 7.02">
   <title>ADDMRK02</title>
   <desc>left (triangle to the left)</desc>
   <metadata />
