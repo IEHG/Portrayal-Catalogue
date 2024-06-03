@@ -16,7 +16,7 @@ function CardinalBeacon(feature, featurePortrayal, contextParameters)
 		displayPlane = 'OverRADAR'
 	end
 	
-	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true;ViewingGroup:' .. viewingGroup .. ';DrawingPriority:' .. priority .. ';DisplayPlane:' .. displayPlane)
+	-- featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true;ViewingGroup:' .. viewingGroup .. ';DrawingPriority:' .. priority .. ';DisplayPlane:' .. displayPlane)
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.SimplifiedSymbols then
