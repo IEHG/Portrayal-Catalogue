@@ -1,8 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
--- #48
--- #89
-
 -- Referenced portrayal rules.
 require 'OBSTRN07'
 
