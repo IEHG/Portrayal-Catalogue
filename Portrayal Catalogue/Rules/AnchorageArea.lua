@@ -8,7 +8,7 @@ require 'RESTRN01'
 function AnchorageArea(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:ProhAre,112,112')
+	-- featurePortrayal:AddInstructions('AlertReference:ProhAre,112,112')
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
