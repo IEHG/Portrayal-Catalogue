@@ -1,8 +1,6 @@
--- Main entry point for feature type.
-
--- UNOFFICIAL:  Rules extracted from S-52 lookup table for BRIDGE.
-
+-- from S-57 BRIDGE, CATBRG=1 (fixed bridge)
 function SpanFixed(feature, featurePortrayal, contextParameters)
+	-- featurePortrayal:AddInstructions('AlertReference:NavHazard')
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
