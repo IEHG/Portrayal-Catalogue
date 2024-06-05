@@ -18,7 +18,7 @@ function LateralBeacon(feature, featurePortrayal, contextParameters)
 		displayPlane = 'OverRADAR'
 	end
 	
-	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true;ViewingGroup:' .. viewingGroup .. ';DrawingPriority:' .. priority .. ';DisplayPlane:' .. displayPlane)
+	-- featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true;ViewingGroup:' .. viewingGroup .. ';DrawingPriority:' .. priority .. ';DisplayPlane:' .. displayPlane)
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.SimplifiedSymbols then
@@ -142,7 +142,7 @@ function LateralBeacon(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('PointInstruction:BCNGEN01')
 				textOffsetY = 7.02
 			else
-				featurePortrayal:AddInstructions('PointInstruction:BCNGEN03')
+				featurePortrayal:AddInstructions('PointInstruction:BCNSTK03')
 			end
 			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
