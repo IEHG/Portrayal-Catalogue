@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='svgStyle.css'?>
+<svg version="1.2" baseProfile="tiny" width="3.40mm" height="3.40mm" viewBox="-1.71 -1.71 3.42 3.42" xmlns="http://www.w3.org/2000/svg">
+  <title>HRBFAC15</title>
+  <desc>water police</desc>
+  <metadata />
+  <g>
+    <circle cx="0.00" cy="0.00" r="1.70" class="fLITGY sBLACK" stroke-width="0.08" />
+    <path class="fBLACK sBLACK" d="M -1.13,-0.76 L -0.96,0.73 L -0.74,0.73 L -0.52,0.06 L -0.30,0.73 L -0.06,0.73 L 0.08,-0.76 L -0.11,-0.76 L -0.22,0.42 L -0.45,-0.26 L -0.60,-0.26 L -0.81,0.38 L -0.92,-0.77 L -1.13,-0.76 Z" stroke-width="0" />
+    <path class="fBLACK sBLACK" d="M 0.51,-0.60 L 0.51,-0.76 L 0.30,-0.76 L 0.30,0.73 L 0.50,0.73 L 0.50,0.20 L 0.68,0.20 L 0.80,0.19 L 0.90,0.17 L 0.99,0.14 L 1.05,0.11 L 1.14,0.05 L 1.18,-0.01 L 1.25,-0.11 L 1.27,-0.20 L 1.29,-0.30 L 1.28,-0.42 L 1.25,-0.50 L 1.22,-0.55 L 1.17,-0.61 L 1.11,-0.66 L 1.06,-0.70 L 0.98,-0.73 L 0.90,-0.75 L 0.83,-0.76 L 0.76,-0.76 L 0.51,-0.76 L 0.51,-0.60 L 0.69,-0.60 L 0.79,-0.59 L 0.85,-0.58 L 0.93,-0.55 L 1.00,-0.50 L 1.03,-0.45 L 1.07,-0.38 L 1.07,-0.34 L 1.07,-0.27 L 1.06,-0.20 L 1.05,-0.15 L 1.02,-0.10 L 0.97,-0.06 L 0.93,-0.02 L 0.88,0.00 L 0.79,0.02 L 0.68,0.02 L 0.51,0.02 L 0.51,-0.60 Z" stroke-width="0" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  </g>
+</svg>
