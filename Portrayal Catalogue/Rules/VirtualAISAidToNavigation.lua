@@ -6,6 +6,7 @@
 function VirtualAISAidToNavigation(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27240
 	
+	if feature.marksNavigationalSystemOf ~= 11 then
 		if feature.PrimitiveType == PrimitiveType.Point	then
 			featurePortrayal:AddInstructions('AlertReference:NavHazard')
 			featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR;ViewingGroup:21020;DrawingPriority:18')
@@ -57,5 +58,6 @@ function VirtualAISAidToNavigation(feature, featurePortrayal, contextParameters)
 		else
 			error('Invalid primitive type or mariner settings passed to portrayal')
 		end
+	end
 	return viewingGroup
 end
