@@ -1,9 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.1.0 (2024/03/13)
---
--- issues to solve: 
---
-
 -- Waterway gauge main entry point.
 function WaterwayGauge(feature, featurePortrayal, contextParameters)
 	local viewingGroup
@@ -11,6 +5,9 @@ function WaterwayGauge(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		featurePortrayal:AddInstructions('NullInstruction')
+	elseif feature.PrimitiveType == PrimitiveType.Point then
+		featurePortrayal:AddInstructions('ViewingGroup:28020;DrawingPriority:21;DisplayPlane:OverRADAR')
+		featurePortrayal:AddInstructions('PointInstruction:WTLVGG02')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
