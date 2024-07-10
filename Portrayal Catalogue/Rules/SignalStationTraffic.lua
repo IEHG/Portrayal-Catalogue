@@ -21,7 +21,7 @@ function SignalStationTraffic(feature, featurePortrayal, contextParameters)
 		elseif feature.categoryOfSignalStationTraffic == 62 then
 			featurePortrayal:AddInstructions('PointInstruction:SSLOCK01') 
 		elseif feature.categoryOfSignalStationTraffic == 10 then
-			featurePortrayal:AddInstructions('PointInstruction:SSLOSSWARS01CK01') 
+			featurePortrayal:AddInstructions('PointInstruction:SSWARS01') 
 	   	else
 			featurePortrayal:AddInstructions('PointInstruction:SISTAT03') 
 	   	end
