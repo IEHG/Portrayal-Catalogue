@@ -16,11 +16,11 @@ function SignalStationTraffic(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
-		if feature.categoryOfSignalStaton == 2 then
-			 featurePortrayal:AddInstructions('PointInstruction:SSENTR01') 
-		elseif feature.categoryOfSignalStaton == 62 then
-				featurePortrayal:AddInstructions('PointInstruction:SSLOCK01') 
-		elseif feature.categoryOfSignalStaton == 10 then
+		if feature.categoryOfSignalStationTraffic == 2 then
+			featurePortrayal:AddInstructions('PointInstruction:SSENTR01') 
+		elseif feature.categoryOfSignalStationTraffic == 62 then
+			featurePortrayal:AddInstructions('PointInstruction:SSLOCK01') 
+		elseif feature.categoryOfSignalStationTraffic == 10 then
 			featurePortrayal:AddInstructions('PointInstruction:SSLOSSWARS01CK01') 
 	   	else
 			featurePortrayal:AddInstructions('PointInstruction:SISTAT03') 
