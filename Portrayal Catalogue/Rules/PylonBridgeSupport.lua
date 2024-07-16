@@ -1,9 +1,9 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
 -- Pylon/bridge support main entry point.
 function PylonBridgeSupport(feature, featurePortrayal, contextParameters)
 	local viewingGroup
+
+	--featurePortrayal:AddInstructions('AlertReference:NavHazard')
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
