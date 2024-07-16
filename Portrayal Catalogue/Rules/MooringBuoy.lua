@@ -2,7 +2,7 @@ function MooringBuoy(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27010
 
 	if feature.PrimitiveType == PrimitiveType.Point then
-		featurePortrayal:AddInstructions('AlertReference:NavHazard;ViewingGroup:' .. viewingGroup .. ';DrawingPriority:24')
+		-- featurePortrayal:AddInstructions('AlertReference:NavHazard;ViewingGroup:' .. viewingGroup .. ';DrawingPriority:24')
 		if contextParameters.RadarOverlay then
 			featurePortrayal:AddInstructions('DisplayPlane:OverRADAR')
 		else
