@@ -1,11 +1,11 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- #194
 
 -- Pontoon main entry point.
 function Pontoon(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
+	-- featurePortrayal:AddInstructions('AlertReference:SafetyContour')
+	
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		viewingGroup = 12410
 		if contextParameters.RadarOverlay then
