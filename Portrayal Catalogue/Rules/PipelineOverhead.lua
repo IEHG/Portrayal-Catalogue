@@ -1,9 +1,8 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
-
 -- Pipeline Overhead main entry point.
 function PipelineOverhead(feature, featurePortrayal, contextParameters)
 	local viewingGroup
+
+	-- featurePortrayal:AddInstructions('AlertReference:NavHazard')
 
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		if feature.radarConspicuous then
