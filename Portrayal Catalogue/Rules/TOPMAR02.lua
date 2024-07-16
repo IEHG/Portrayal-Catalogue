@@ -74,13 +74,41 @@ local rigidTopmarks =
 	[33] = 'TMARDEF1'
 }
 
+
+local floatingInlandTopmarks =
+{
+	[1] = 'TOPMA100',
+	[2] = 'TOPMA101',
+	[3] = 'TOPMA102',
+	[4] = 'TOPMA103',
+	[5] = 'TOPMA104',
+	[6] = 'TOPMA105',
+	[7] = 'TOPMA106',
+	[8] = 'TOPMA107',
+	[9] = 'TOPMA108',
+	[10] = 'TOPMA109',
+	[11] = 'TOPMA110',
+	[12] = 'TOPMA111',
+	[13] = 'TOPMA112',
+	[14] = 'TOPMA113',
+	[15] = 'TOPMA114',
+	[16] = 'TOPMA115',
+	[17] = 'TOPMA116',
+	[18] = 'TOPMA117'
+}
+	
+
 -- Main entry point for CSP.
 function TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, isFloating)
 	Debug.StartPerformance('Lua Code - TOPMAR02')
 
 	if feature.topmark then
 		if isFloating then
-			topmarkSymbol = floatingTopmarks[feature.topmark.topmarkDaymarkShape] or 'TMARDEF2'
+			if (feature.marksNavigationalSystemOf == 11) then   
+				topmarkSymbol = floatingInlandTopmarks[feature.topmark.topmarkDaymarkShape] or 'TMARDEF2'
+			else
+				topmarkSymbol = floatingTopmarks[feature.topmark.topmarkDaymarkShape] or 'TMARDEF2'
+			end
 		else
 			topmarkSymbol = rigidTopmarks[feature.topmark.topmarkDaymarkShape] or 'TMARDEF1'
 		end
