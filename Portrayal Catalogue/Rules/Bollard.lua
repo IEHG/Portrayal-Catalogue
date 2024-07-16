@@ -3,7 +3,7 @@ function Bollard(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart uses same symbolization
-		featurePortrayal:AddInstructions('AlertReference:NavHazard;ViewingGroup:' .. viewingGroup .. ';DrawingPriority:18')
+		-- featurePortrayal:AddInstructions('AlertReference:NavHazard;ViewingGroup:' .. viewingGroup .. ';DrawingPriority:18')
 		if contextParameters.RadarOverlay then
 			featurePortrayal:AddInstructions('DisplayPlane:OverRADAR')
 		else
