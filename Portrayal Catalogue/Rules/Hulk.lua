@@ -1,9 +1,8 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
-
 -- Hulk main entry point.
 function Hulk(feature, featurePortrayal, contextParameters)
 	local viewingGroup
+
+	-- featurePortrayal:AddInstructions('AlertReference:SafetyContour')
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
