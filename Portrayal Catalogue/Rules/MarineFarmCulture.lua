@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
 -- Referenced portrayal rules.
 require 'RESTRN01'
@@ -8,7 +6,7 @@ require 'RESTRN01'
 function MarineFarmCulture(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:ProhAre,53024,53024')
+	-- featurePortrayal:AddInstructions('AlertReference:ProhAre,53024,53024')
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
