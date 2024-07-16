@@ -10,7 +10,7 @@ function MooringArea(feature, featurePortrayal, contextParameters)
 
 	local viewingGroup = 26220
 
-	featurePortrayal:AddInstructions('AlertReference:ProhAre,53023,53023')
+	-- featurePortrayal:AddInstructions('AlertReference:ProhAre,53023,53023')
 
 	-- #309, "Visitors" or "Tankers" string placement to add to text below symbol
 	local function AddVisitorTankerName(feature, localOffset)
