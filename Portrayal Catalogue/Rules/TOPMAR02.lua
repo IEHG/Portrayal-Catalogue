@@ -99,16 +99,69 @@ local floatingInlandTopmarks =
 	
 
 -- Main entry point for CSP.
-function TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, isFloating)
+function TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, isFloating, isBeacon)
 	Debug.StartPerformance('Lua Code - TOPMAR02')
-
+		
 	if feature.topmark then
 		if isFloating then
-			if (feature.marksNavigationalSystemOf == 11) then   
-				topmarkSymbol = floatingInlandTopmarks[feature.topmark.topmarkDaymarkShape] or 'TMARDEF2'
+			topmarkSymbol = floatingTopmarks[feature.topmark.topmarkDaymarkShape] or 'TMARDEF2'
+			if isBeacon then
+				if feature.topmark.topmarkDaymarkShape == 1 and feature.topmark.colour[1] == 4 then
+					topmarkSymbol = 'TOPMA112'
+				elseif feature.topmark.topmarkDaymarkShape == 1 and feature.topmark.colour[1] == 1 and feature.topmark.colour[2] == 4 and feature.topmark.colourPattern == 6 then 
+					topmarkSymbol = 'TOPMA103'
+				elseif feature.topmark.topmarkDaymarkShape == 1 and feature.topmark.colour[1] == 4 and feature.topmark.colour[2] == 1 and feature.topmark.colourPattern == 6 then 
+					topmarkSymbol = 'TOPMA103'					
+
+				elseif feature.topmark.topmarkDaymarkShape == 2 and feature.topmark.colour[1] == 3 then 
+					topmarkSymbol = 'TOPMA100'
+				elseif feature.topmark.topmarkDaymarkShape == 2 and feature.topmark.colour[1] == 1 and feature.topmark.colour[2] == 3 and feature.topmark.colourPattern == 6 then 
+					topmarkSymbol = 'TOPMA101'		
+				elseif feature.topmark.topmarkDaymarkShape == 2 and feature.topmark.colour[1] == 3 and feature.topmark.colour[2] == 1 and feature.topmark.colourPattern == 6 then 
+					topmarkSymbol = 'TOPMA101'
+					
+				elseif feature.topmark.topmarkDaymarkShape == 6 and feature.topmark.colour[1] == 1 and feature.topmark.colour[2] == 3 and feature.topmark.colourPattern == 6 then 
+					topmarkSymbol = 'TOPMA107'		
+				elseif feature.topmark.topmarkDaymarkShape == 6 and feature.topmark.colour[1] == 3 and feature.topmark.colour[2] == 1 and feature.topmark.colourPattern == 6 then 
+					topmarkSymbol = 'TOPMA107'			
+				elseif feature.topmark.topmarkDaymarkShape == 6 and feature.topmark.colour[1] == 1 and feature.topmark.colour[2] == 3 and feature.topmark.colour[3] == 1 and feature.topmark.colourPattern == 1 then 
+					topmarkSymbol = 'TOPMA106'				
+				elseif feature.topmark.topmarkDaymarkShape == 6 and feature.topmark.colour[1] == 6 and feature.topmark.colour[2] == 2 and feature.topmark.colour[3] == 6 and feature.topmark.colourPattern == 2 then 
+					topmarkSymbol = 'TOPMA110'		
+										
+				if feature.topmark.topmarkDaymarkShape == 7 and feature.topmark.colour[1] == 6 then
+					topmarkSymbol = 'TOPMA113'
+					
+				if feature.topmark.topmarkDaymarkShape == 8 and feature.topmark.colour[1] == 6 then
+					topmarkSymbol = 'TOPMA111'
+					
+				if feature.topmark.topmarkDaymarkShape == 10 and feature.topmark.colour[1] == 3 and feature.topmark.colour[2] == 4 then
+					topmarkSymbol = 'TOPMA104'
+				if feature.topmark.topmarkDaymarkShape == 10 and feature.topmark.colour[1] == 4 and feature.topmark.colour[2] == 3 then
+					topmarkSymbol = 'TOPMA104'
+				if feature.topmark.topmarkDaymarkShape == 10 and feature.topmark.colour[1] == 3 and feature.topmark.colour[2] == 4 and feature.topmark.colourPattern == 6 then
+					topmarkSymbol = 'TOPMA104'
+					
+				if feature.topmark.topmarkDaymarkShape == 12 and feature.topmark.colour[1] == 4 and feature.topmark.colour[2] == 1 and feature.topmark.colourPattern == 6 then
+					topmarkSymbol = 'TOPMA109'
+				if feature.topmark.topmarkDaymarkShape == 12 and feature.topmark.colour[1] == 1 and feature.topmark.colour[2] == 4 and feature.topmark.colourPattern == 6 then
+					topmarkSymbol = 'TOPMA109'
+				if feature.topmark.topmarkDaymarkShape == 12 and feature.topmark.colour[1] == 4 and feature.topmark.colour[2] == 1 and feature.topmark.colourPattern == 1 then
+					topmarkSymbol = 'TOPMA108'
+				if feature.topmark.topmarkDaymarkShape == 12 and feature.topmark.colour[1] == 6 and feature.topmark.colour[2] == 2 and feature.topmark.colour[2] == 6 and feature.topmark.colourPattern == 2 then
+					topmarkSymbol = 'TOPMA112'
+				end
 			else
-				topmarkSymbol = floatingTopmarks[feature.topmark.topmarkDaymarkShape] or 'TMARDEF2'
-			end
+				if feature.topmark.topmarkDaymarkShape == 1 and feature.topmark.colour[1] == 4 then
+					topmarkSymbol = 'TOPMA115'
+				elseif feature.topmark.topmarkDaymarkShape == 5 and feature.topmark.colour[1] == 3 then 
+					topmarkSymbol = 'TOPMA114'
+				elseif feature.topmark.topmarkDaymarkShape == 5 and feature.topmark.colour[1] == 3 and feature.topmark.colour[2] == 1 and feature.topmark.colour[3] == 3 then 
+					topmarkSymbol = 'TOPMA116'
+				end
+			end 
+		end
+				
 		else
 			topmarkSymbol = rigidTopmarks[feature.topmark.topmarkDaymarkShape] or 'TMARDEF1'
 		end
