@@ -71,7 +71,7 @@ function SafeWaterBeacon(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('PointInstruction:BCNGEN03')
 			end
-			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false, true)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,' .. textOffsetY .. ';TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), textViewingGroup, textPriority, viewingGroup, priority)
