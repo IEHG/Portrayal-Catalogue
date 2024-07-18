@@ -79,7 +79,7 @@ function CardinalBuoy(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('PointInstruction:BOYGEN03')
 			end
 			
-			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true, false)
 			
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:' .. textOffsetX .. ',3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
