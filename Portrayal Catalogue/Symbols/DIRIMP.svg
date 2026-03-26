@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='daySvgStyle.css'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="12.76mm" height="15.03mm" viewBox="-6.39 -8.66 12.78 15.05">
+  <title>DIRIMP</title>
+  <desc>direction of impact</desc>
+  <metadata><iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2"><iho:Description iho:publisher="IHB" iho:creationDate="2014-06-09" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="0.1"/></iho:S100SVG></metadata>
+  
+    <path class="fBLACK sBLACK" d="M -2.71,-5.78 L -2.51,-5.87 L -2.30,-5.95 L -2.09,-6.03 L -1.88,-6.10 L -1.67,-6.16 L -1.45,-6.21 L -1.23,-6.26 L -1.01,-6.30 L -0.79,-6.33 L -0.57,-6.35 L -0.35,-6.37 L -0.12,-6.38 L 0.10,-6.38 L 0.32,-6.37 L 0.54,-6.35 L 0.77,-6.33 L 0.99,-6.30 L 1.21,-6.26 L 1.42,-6.21 L 1.64,-6.16 L 1.86,-6.10 L 2.07,-6.03 L 2.28,-5.95 L 2.48,-5.87 L 2.69,-5.78 L -0.01,-8.65 L -2.71,-5.78 Z" stroke-width="0.04" />
+    <circle cx="0.00" cy="0.00" r="6.38" class="f0 sBLACK" stroke-width="0.28" stroke-dasharray="0.1,0.3" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  
+</svg>
