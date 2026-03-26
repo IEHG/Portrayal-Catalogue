@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='daySvgStyle.css'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="1.61mm" height="4.90mm" viewBox="-0.41 -4.91 1.63 4.92">
+  <title>TOPMA115</title>
+  <desc>buoy top mark, green cone, point up</desc>
+  <metadata><iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2"><iho:Description iho:publisher="IHB" iho:creationDate="2014-06-09" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="0.1"/></iho:S100SVG></metadata>
+  
+    <path class="f0 sBLACK" d="M 0.41,-3.45 L 0.35,-3.20 " stroke-width="0.12" />
+    <path class="fLTGRN sBLACK" d="M -0.40,-3.45 L 1.21,-4.90 L 1.21,-3.45 L -0.40,-3.45 Z" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  
+</svg>
