@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="daySvgStyle.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="4.32mm" height="4.32mm" viewBox="-2.16 -2.16 4.32 4.32">
+    <title>SSLOCK01</title>
+    <desc>signal station, lock</desc>
+    <metadata>
+        <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2">
+            <iho:Description iho:publisher="IHB" iho:creationDate="2014-06-09" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="0.1"/>
+        </iho:S100SVG>
+    </metadata>
+    
+        <path class="fWHITE sBLACK" d="M -1.65,-1.00 L 1.65,-1.00 L 1.65,1.00 L -1.65,1.00 L -1.65,-1.00 Z" stroke-width="0.12" />
+        <circle cx="0.71" cy="0.01" r="0.45" class="f0 sBLACK" stroke-width="0.12" />
+        <circle cx="-0.73" cy="0.01" r="0.45" class="fBLACK sBLACK" stroke-width="0.04" />
+        <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+    
+</svg>
