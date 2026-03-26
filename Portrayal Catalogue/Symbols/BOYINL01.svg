@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='daySvgStyle.css'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="4.10mm" height="2.30mm" viewBox="-2.06 -2.31 4.12 2.32">
+  <title>BOYINL01</title>
+  <desc>river buoy right-hand side of the fairway (1.B of CEVNI)</desc>
+  <metadata><iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2"><iho:Description iho:publisher="IHB" iho:creationDate="2014-06-09" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="0.1"/></iho:S100SVG></metadata>
+  
+    <path class="fORRED sBLACK" d="M -2.05,0.00 L -2.05,-0.65 L -1.33,-1.00 L -1.33,-2.30 L 1.33,-2.30 L 1.33,-1.00 L 2.05,-0.65 L 2.05,0.00 L -2.05,0.00 Z" stroke-width="0.12" />
+    <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+  
+</svg>
