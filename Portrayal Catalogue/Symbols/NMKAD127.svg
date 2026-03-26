@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='daySvgStyle.css'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="4mm" height="4mm" viewBox="0 0 1271 1271">
+  
+  <metadata>
+    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2">
+      <iho:Description iho:publisher="IHB" iho:creationDate="2014-06-09" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="0.1"/>
+    </iho:S100SVG>
+  </metadata>
+  <polygon class="fYLLOW sBLACK" points="22,22 1249,22 1249,1249 22,1249 "/>
+  <path class="fBLACK" d="M297 1077l0 -884 286 0c109,0 179,4 212,13 51,14 93,43 127,87 35,44 52,102 52,172 0,55 -10,100 -30,137 -20,37 -44,66 -75,87 -30,21 -61,35 -92,42 -43,9 -104,13 -185,13l-116 0 0 333 -179 0zm179 -734l0 252 97 0c70,0 117,-5 141,-14 24,-10 42,-24 55,-44 14,-20 21,-43 21,-69 0,-32 -10,-59 -29,-80 -19,-21 -42,-34 -71,-39 -21,-4 -64,-6 -128,-6l-86 0z"/>
+ 
+</svg>

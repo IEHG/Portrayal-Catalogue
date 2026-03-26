@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='daySvgStyle.css'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="4mm" height="4mm" viewBox="0 0 6314 6314">
+  <metadata>
+    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2">
+      <iho:Description iho:publisher="IHB" iho:creationDate="2014-06-09" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="0.1"/>
+    </iho:S100SVG>
+  </metadata>
+  <rect class="fWHITE sBLACK" x="108" y="108" width="6099" height="6099"/>
+  <rect class="fMIDRD sMIDRD" x="930" y="1822" width="4550" height="2517"/>
+
+</svg>
