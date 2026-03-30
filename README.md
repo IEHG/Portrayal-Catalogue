@@ -12,6 +12,3 @@ Information:
 #0022:  The inland specific conditions without differences or questions were developed into scripts. Filenames start with an underscore '_'.
 
 #003:  The Portrayal Catalogue XML must be developed manually (based on the S-101 PC)
-
-Edit:
-26/032026: Updated all symbols in accordance with SVG profile, all rules compared with S-101 PC Edition 2.0.0 Rules and updated when necessary
