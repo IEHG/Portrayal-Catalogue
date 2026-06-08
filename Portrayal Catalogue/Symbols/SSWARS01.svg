@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="daySvgStyle.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="4.32mm" height="4.32mm" viewBox="-2.16 -2.16 4.32 4.32">
+    <title>SSWARS01</title>
+    <desc>signal station, Wahrschau</desc>
+    <metadata>
+        <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2">
+            <iho:Description iho:publisher="IHB" iho:creationDate="2014-06-09" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="0.1"/>
+        </iho:S100SVG>
+    </metadata>
+    
+        <path class="f0 sBLACK" d="M 0.00,-2.45 L 0.00,-0.24 " stroke-width="0.12" />
+        <path class="f0 sBLACK" d="M -0.90,0.00 L -0.24,0.00 " stroke-width="0.12" />
+        <path class="f0 sBLACK" d="M 0.24,0.00 L 0.93,0.00 " stroke-width="0.12" />
+        <path class="f0 sBLACK" d="M 0.00,0.24 L 0.00,0.39 " stroke-width="0.12" />
+        <path class="fWHITE sBLACK" d="M -1.45,-5.35 L 1.45,-5.35 L 1.45,-2.45 L -1.45,-2.45 L -1.45,-5.35 Z" stroke-width="0.12" />
+        <circle cx="0.00" cy="0.00" r="0.24" class="fWHITE sBLACK" stroke-width="0.12" />
+        <path class="f0 sBLACK" d="M 0.00,-4.94 L 1.01,-3.00 L -1.01,-3.00 L 0.00,-4.94 Z" stroke-width="0.12" />
+        <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2" />
+    
+</svg>
