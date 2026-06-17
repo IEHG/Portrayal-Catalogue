@@ -4,7 +4,7 @@ function WaterwayGauge(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
-		featurePortrayal:AddInstructions('NullInstruction')
+		featurePortrayal:AddInstructions('DisplayPlane:OverRADAR;NullInstruction')
 	elseif feature.PrimitiveType == PrimitiveType.Point then
 		featurePortrayal:AddInstructions('ViewingGroup:28020;DrawingPriority:21;DisplayPlane:OverRADAR')
 		featurePortrayal:AddInstructions('PointInstruction:WTLVGG02')

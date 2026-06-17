@@ -13,7 +13,7 @@ function Checkpoint(feature, featurePortrayal, contextParameters)
 		viewingGroup = 32410
         
 		featurePortrayal:SimpleLineStyle('dash',0.31,'TRFCF')
-		featurePortrayal:AddInstructions('LineInstruction:_simple_')
+		featurePortrayal:AddInstructions('DisplayPlane:OverRADAR;LineInstruction:_simple_')
 
         if feature.categoryOfCheckpoint == 1 then
             featurePortrayal:AddInstructions('ViewingGroup:32410;DrawingPriority:21;DisplayPlane:OverRADAR')

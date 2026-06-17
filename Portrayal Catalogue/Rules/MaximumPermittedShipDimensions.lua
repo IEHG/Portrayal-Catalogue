@@ -10,7 +10,7 @@ function MaximumPermittedShipDimensions(feature, featurePortrayal, contextParame
 
 	if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
-		featurePortrayal:AddInstructions('NullInstruction')
+		featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR;NullInstruction')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
