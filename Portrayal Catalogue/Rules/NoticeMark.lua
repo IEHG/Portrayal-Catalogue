@@ -16,10 +16,29 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
             featurePortrayal:AddInstructions('ViewingGroup:27250;DrawingPriority:32;DisplayPlane:UnderRADAR')
         end
 
+		local marksNavigationalSystemOf = feature.marksNavigationalSystemOf --or 11
+		--                                                                  ^^ uncomment for testing m_nsys doesn't cover and marksNavigationalSystemOf is missing
+
+		if marksNavigationalSystemOf == nil then
+			-- Look for an enclosing NavigationalSystemofMarks feature
+			for _, nsysFeature in ipairs(portrayalContext:GetFeatures('NavigationalSystemOfMarks')) do
+				--Debug.Break()
+				-- if nsysFeature COVERS feature
+				if HostSpatialRelate(nsysFeature.Spatial.SpatialID, feature.Spatial.SpatialID, 'T*****FF*') then
+					--Debug.Break()
+					marksNavigationalSystemOf = nsysFeature.marksNavigationalSystemOf
+					break
+				end
+			end
+		end
+
+		if marksNavigationalSystemOf == nil then
+			error('marksNavigationalSystemOf must be specified if no enclosing NavigationalSystemOfMarks')
+
         ----------------------------------------
         -- If the marking system is IALA B (US):
         ----------------------------------------   
-        if (feature.marksNavigationalSystemOf == 2) then   
+        elseif (marksNavigationalSystemOf == 2) then   
             if (feature.categoryOfNoticeMark == 1) then                
                 featurePortrayal:AddInstructions('PointInstruction:NMKPRH02')
                 if (feature.orientationValue) then
@@ -38,7 +57,7 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
         -------------------------------------------
         -- If the marking system is European CEVNI:
         -------------------------------------------        
-        elseif (feature.marksNavigationalSystemOf == 11) then           
+        elseif (marksNavigationalSystemOf == 11) then           
             if (feature.categoryOfNoticeMark == 1) then                
                 featurePortrayal:AddInstructions('PointInstruction:NMKPRH02')
                 if (feature.orientationValue) then
@@ -397,7 +416,7 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
         -------------------------------------------
         -- If the marking system is Russian:
         -------------------------------------------        
-        elseif (feature.marksNavigationalSystemOf == 12) then            
+        elseif (marksNavigationalSystemOf == 12) then            
             if (feature.categoryOfNoticeMark == 5) then
                 featurePortrayal:AddInstructions('PointInstruction:NMKPR103')                
             elseif (feature.categoryOfNoticeMark == 8) then
@@ -426,7 +445,7 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
         -------------------------------------------
         -- If the marking system is Brazilian:
         -------------------------------------------        
-        elseif (feature.marksNavigationalSystemOf == 13) then
+        elseif (marksNavigationalSystemOf == 13) then
             if (feature.categoryOfNoticeMark == 1) then
                 featurePortrayal:AddInstructions('PointInstruction:NMKPRH02')  
             elseif (feature.categoryOfNoticeMark == 8) then
@@ -517,7 +536,7 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
         -----------------------------------------------
         -- If the marking system is Brazilian Paraguay:
         -----------------------------------------------        
-        elseif (feature.marksNavigationalSystemOf == 15) then
+        elseif (marksNavigationalSystemOf == 15) then
 
             if (feature.categoryOfNoticeMark == 103) then
                 if (feature.bankOfTheWaterway == 1) then
