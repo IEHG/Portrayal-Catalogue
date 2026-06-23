@@ -17,7 +17,7 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
         end
 
 		local marksNavigationalSystemOf = feature.marksNavigationalSystemOf --or 11
-		--                                                                  ^^ uncomment for testing m_nsys doesn't cover and marksNavigationalSystemOf is missing
+		--                                                                  ^^ uncomment for testing if m_nsys doesn't cover and marksNavigationalSystemOf is missing
 
 		if marksNavigationalSystemOf == nil then
 			-- Look for an enclosing NavigationalSystemofMarks feature
