@@ -1,4 +1,5 @@
--- #24 - unit hectometer added
+-- #24 
+-- #30 - unit hectometer added
 
 -- Distance mark main entry point.
 function DistanceMark(feature, featurePortrayal, contextParameters)
