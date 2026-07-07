@@ -3,6 +3,7 @@
 
 -- Referenced portrayal rules.
 require 'TOPMAR02'
+require 'MARSYS01'
 
 -- Buoy Lateral main entry point.
 function LateralBuoy(feature, featurePortrayal, contextParameters)
@@ -10,19 +11,22 @@ function LateralBuoy(feature, featurePortrayal, contextParameters)
 	local textViewingGroup = 21
 	local priority = 24
 	local textPriority = 24
-	local displayPlane = 'UnderRADAR'
+	local displayPlane = 'UnderRadar'
 
+	
 	if contextParameters.RadarOverlay then
-		displayPlane = 'OverRADAR'
+		displayPlane = 'OverRadar'
 	end
 	
 	-- featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true;)
 
 	featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:' .. priority .. ';DisplayPlane:' .. displayPlane)
 
+	local marksNavigationalSystemOf = MARSYS01(feature, featurePortrayal, contextParameters, viewingGroup)
+
 	if feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.SimplifiedSymbols then
-			if feature.marksNavigationalSystemOf == 11 then
+			if marksNavigationalSystemOf == 11 then
 				if feature.categoryOfLateralMark == 3 then
 					featurePortrayal:AddInstructions('PointInstruction:BOYINL03')
 				elseif feature.categoryOfLateralMark == 4 then
@@ -88,7 +92,7 @@ function LateralBuoy(feature, featurePortrayal, contextParameters)
 			end
 		else
 			local textOffsetX = -3.51
-			if feature.marksNavigationalSystemOf == 11 then
+			if marksNavigationalSystemOf == 11 then
 				if feature.categoryOfLateralMark == 3 then
 					featurePortrayal:AddInstructions('PointInstruction:BOYINL03')
 				elseif feature.categoryOfLateralMark == 4 then
