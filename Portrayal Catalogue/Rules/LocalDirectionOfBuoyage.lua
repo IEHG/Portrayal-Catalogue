@@ -5,13 +5,15 @@
 -- UNOFFICIAL:  Rules extracted from S-52 lookup table for M_NSYS.
 
 -- Main entry point for feature type.
+require 'MARSYS01'
+
 function LocalDirectionOfBuoyage(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Surface then
 	
-		featurePortrayal:AddInstructions('ViewingGroup:27040;DrawingPriority:12;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:27040;DrawingPriority:12;DisplayPlane:UnderRadar')
 
 
-		local MNSO = feature.marksNavigationalSystemOf
+		local MNSO = MARSYS01(feature, featurePortrayal, contextParameters, viewingGroup)	
 		local OV = feature.orientationValue
 
 		if OV then
@@ -36,7 +38,7 @@ function LocalDirectionOfBuoyage(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
 			end
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:27040;DrawingPriority:12;DisplayPlane:UnderRADAR;NullInstruction')
+			featurePortrayal:AddInstructions('ViewingGroup:27040;DrawingPriority:12;DisplayPlane:UnderRadar;NullInstruction')
 		end
 	else
 		error('Primitive type for LocalDirectionOfBuoyage must be Surface')
