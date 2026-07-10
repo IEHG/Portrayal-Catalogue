@@ -5,13 +5,109 @@
 -- require 'NOTMRKI1'
 require 'MARSYS01'
 
+
+function SplitComma(text)
+
+    local result = {}
+    local current = ""
+
+    for i = 1, #text do
+
+        local c = string.sub(text, i, i)
+
+        if c == "," then
+            result[#result + 1] = current
+            current = ""
+        else
+            current = current .. c
+        end
+    end
+
+    -- laatste element toevoegen
+    result[#result + 1] = current
+
+    return result
+end
+function StringToNumber(str)
+
+    local value = 0
+
+    for i = 1, #str do
+        local c = string.sub(str, i, i)
+
+        value = value * 10 + (
+            string.byte(c) - string.byte("0")
+        )
+    end
+
+    return value
+end
+function ToRoman(number)
+
+    local roman = ""
+
+    local values = {
+        {1000, "M"},
+        {900,  "CM"},
+        {500,  "D"},
+        {400,  "CD"},
+        {100,  "C"},
+        {90,   "XC"},
+        {50,   "L"},
+        {40,   "XL"},
+        {10,   "X"},
+        {9,    "IX"},
+        {5,    "V"},
+        {4,    "IV"},
+        {1,    "I"}
+    }
+
+    for _, item in ipairs(values) do
+        local value  = item[1]
+        local symbol = item[2]
+
+        while number >= value do
+            roman = roman .. symbol
+            number = number - value
+        end
+    end
+
+    return roman
+end
+
+local function GetVisualLength(text)
+
+    local len = 0
+
+    for c in text:gmatch(".") do
+
+        if c:match("[%u%d]") then
+            len = len + 0.75      -- hoofdletters/cijfers
+        elseif c == " " then
+            len = len + 0.30
+        elseif c == "." then
+            len = len + 0.25
+        else
+            len = len + 0.60
+        end
+    end
+
+    return len
+end
+
+local function SetTextInRectangle(featurePortrayal, text, centerX, centerY, width, color, align) 
+    local visualLength = GetVisualLength(text)
+    local rectWidthMm = (width - 0.2)
+    local fontSizePt = rectWidthMm / (visualLength * 0.3528)
+
+    featurePortrayal:AddInstructions('DrawingPriority:25;LocalOffset: '..centerX..','..centerY..';TextAlignHorizontal:'..align..';TextAlignVertical:Center;FontWeight:Medium;FontSize:'..fontSizePt..';FontColor:'..color..'')
+    featurePortrayal:AddTextInstruction(text, 29, 24, 21020)   
+end
+
 function NoticeMark(feature, featurePortrayal, contextParameters)
 	local viewingGroup 
-
+    local text
 	local marksNavigationalSystemOf = MARSYS01(feature, featurePortrayal, contextParameters, viewingGroup)
-    if marksNavigationalSystemOf == nil then
-        marksNavigationalSystemOf = marsys
-    end
 
 	-- Simplified and paper chart points use the same symbolization
 	if feature.PrimitiveType == PrimitiveType.Point then
@@ -75,9 +171,6 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
                     featurePortrayal:AddInstructions('PointInstruction:NMKPRH07')   
                 --              
                 elseif (feature.categoryOfNoticeMark == 7) then
-                    -- =======================================================================================
-                    -- Check if this coding is correct: distance has to be displayed in the middle of the mark
-                    -- =======================================================================================
                     featurePortrayal:AddInstructions('PointInstruction:NOTMRK01')   
                     featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
                     featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 29, 24, 32440, 15)         
@@ -146,13 +239,9 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
                         featurePortrayal:AddInstructions('PointInstruction:NMKREG10')      
                     end 
                 elseif (feature.categoryOfNoticeMark == 32) then
-                    -- =======================================================================================
-                    -- Check if this coding is correct: distance has to be displayed in the middle of the mark
-                    -- =======================================================================================
-                    featurePortrayal:AddInstructions('PointInstruction:NMKREG01') 
-                    featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
-                    featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 29, 24, 32440, 15)  
-
+                    featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:NMKREG01') 
+                    text=EncodeString(feature.information[1].text , '%s') 
+                    SetTextInRectangle(featurePortrayal, text, 0.0, 0.0, 6.51, 'CHBLK', 'Center') 
                 elseif (feature.categoryOfNoticeMark == 33) then
                     if (feature.orientationValue) then
                         featurePortrayal:AddInstructions('PointInstruction:NMKREG24')  
@@ -167,45 +256,35 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
                 elseif (feature.categoryOfNoticeMark == 36) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKREG14')     
                 elseif (feature.categoryOfNoticeMark == 37) then
-                    -- ===============================================================================================
-                    -- Check if this coding is correct: distance has to be displayed in the middle, bottom of the mark
-                    -- ===============================================================================================
-                    featurePortrayal:AddInstructions('PointInstruction:NMKREG15') 
-                    featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Bottom;FontSize:10;FontColor:CHBLK')
-                    featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 29, 24, 32440, 15)    
+                    featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:NMKREG15') 
+                    text=EncodeString(feature.information[1].text , '%s') 
+                    text=string.sub(text, 5) -- temporary until instruction is set in DCEG
+                    SetTextInRectangle(featurePortrayal, text, 0.0, -1.05, 4.0, 'CHBLK', 'Center')
                 elseif (feature.categoryOfNoticeMark == 38) then
-                    featurePortrayal:AddInstructions('PointInstruction:NMKREG16')     
-                    featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Top;FontSize:10;FontColor:CHBLK')
-                    featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 29, 24, 32440, 15)   
+                    featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:NMKREG16')    
+                    text=EncodeString(feature.information[1].text , '%s') 
+                    SetTextInRectangle(featurePortrayal, text, 0.0, 1.05, 6.0, 'CHBLK', 'Center') 
                 elseif (feature.categoryOfNoticeMark == 39) then
-                    featurePortrayal:AddInstructions('PointInstruction:NMKREG17')   
-                    featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Bottom;FontSize:10;FontColor:CHBLK')
-                    featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 29, 24, 32440, 15)    
+                    featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:NMKREG17')   
+                    text=EncodeString(feature.information[1].text , '%s') 
+                    SetTextInRectangle(featurePortrayal, text, 0.0, -1.05, 6.0, 'CHBLK', 'Center') 
                 elseif (feature.categoryOfNoticeMark == 40) then
-                    featurePortrayal:AddInstructions('PointInstruction:NMKREG18')  
-                    featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
-                    featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 29, 24, 32440, 15)     
-    
+                    featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:NMKREG18')  
+                    text=EncodeString(feature.information[1].text , '%s')
+                    SetTextInRectangle(featurePortrayal, text, 0.0, 0.0, 2.8, 'CHBLK', 'Center')
                 elseif (feature.categoryOfNoticeMark == 41) then
+                    featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:ADDMRK05')  
                     featurePortrayal:AddInstructions('PointInstruction:NMKREG01')  
-                    -- ===============================================================================================
-                    -- Information should be displayed below the sign!
-                    -- ===============================================================================================    
+                    text=EncodeString(feature.information[1].text , '%s')
+                    SetTextInRectangle(featurePortrayal, text, 0.0, -4.65, 7.0, 'CHBLK', 'Center')  
                 elseif (feature.categoryOfNoticeMark == 42) then
-                    -- ===============================================================================================
-                    -- Check if this coding is correct: distance has to be displayed in the left, center of the mark
-                    -- ===============================================================================================
-                    featurePortrayal:AddInstructions('PointInstruction:NMKREG19')  
-                    featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Start;TextAlignVertical:Center;FontSize:10;FontColor:WHITE')
-                    featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 29, 24, 32440, 15)     
+                    featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:NMKREG19')  
+                    text=EncodeString(feature.information[1].text , '%s') 
+                    SetTextInRectangle(featurePortrayal, text, -2.51, 0.0, 4.52, 'WHITE', 'Start')
                 elseif (feature.categoryOfNoticeMark == 43) then
-                    -- ===============================================================================================
-                    -- Check if this coding is correct: distance has to be displayed in the right, center of the mark
-                    -- ===============================================================================================
-                    featurePortrayal:AddInstructions('PointInstruction:NMKREG20')  
-                    featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:End;TextAlignVertical:Center;FontSize:10;FontColor:WHITE')
-                    featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 29, 24, 32440, 15)     
-                    
+                    featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:NMKREG20')  
+                    text=EncodeString(feature.information[1].text , '%s')  
+                    SetTextInRectangle(featurePortrayal, "200", 2.51, 0.0, 4.52, 'WHITE', 'End')                    
                 elseif (feature.categoryOfNoticeMark == 44) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKRCD01')  
                 elseif (feature.categoryOfNoticeMark == 45) then
@@ -247,12 +326,10 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
                 elseif (feature.categoryOfNoticeMark == 56) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKINF05') 
                 elseif (feature.categoryOfNoticeMark == 57) then
-                    featurePortrayal:AddInstructions('PointInstruction:NMKINF05') 
-                -- ===============================================================================================
-                -- How to determine which symbol to display?
-                -- ===============================================================================================        
+                    featurePortrayal:AddInstructions('PointInstruction:NMKINF05')       
                 elseif (feature.categoryOfNoticeMark == 58) then
-                    featurePortrayal:AddInstructions('PointInstruction:NMKINF51') -- 51, 52, 53, 54 or 54
+                    local symbol = "NMKINF5"..feature.information[1].text
+                    featurePortrayal:AddInstructions('PointInstruction:'..symbol) 
                 elseif (feature.categoryOfNoticeMark == 59) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKINF07')
                 elseif (feature.categoryOfNoticeMark == 60) then
@@ -339,9 +416,10 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
                 elseif (feature.categoryOfNoticeMark == 98) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKINF46')
                 elseif (feature.categoryOfNoticeMark == 99) then
-                    featurePortrayal:AddInstructions('PointInstruction:NMKINF47A')
-                    featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Bottom;FontSize:10;FontColor:WHITE')
-                    featurePortrayal:AddTextInstruction(EncodeString(feature.information.text, '%s'), 29, 24, 32440, 15)     
+                    featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:NMKINF47A')
+                    text=EncodeString(feature.information[1].text , '%s') 
+                    text=string.sub(text, 5) -- temporary until instruction is set in DCEG
+                    SetTextInRectangle(featurePortrayal, text, 0.0, -1.05, 4.0, 'WHITE', 'Center')    
                 elseif (feature.categoryOfNoticeMark == 100) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKINF48')
                 elseif (feature.categoryOfNoticeMark == 101) then
@@ -357,25 +435,24 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
                 elseif (feature.categoryOfNoticeMark == 118) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKINF57')
                 elseif (feature.categoryOfNoticeMark == 119) then
-                    featurePortrayal:AddInstructions('PointInstruction:NMKINF57')
-                    -- ===============================================================================================
-                    -- How to determine which symbol to display? How to put font into Roman I, II, III, IV, V?
-                    -- ===============================================================================================     
-                    featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontColor:AZUBL')
-                    featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 29, 24, 32440, 15) 
+                    featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:NMKINF57')
+                    text=StringToNumber(feature.information[1].text) 
+                    text=ToRoman(text)
+                    SetTextInRectangle(featurePortrayal, text, 0.0, -0.3, 5.8, 'AZUBL', 'Center')   
                 elseif (feature.categoryOfNoticeMark == 120) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKINF58')
                 elseif (feature.categoryOfNoticeMark == 121) then
-                    -- ===============================================================================================
-                    -- How to determine which symbol to display? How to put font into Roman I, II, III, IV, V?
-                    -- ===============================================================================================
-                    featurePortrayal:AddInstructions('PointInstruction:NMKINF58')
+                    featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:NMKINF58')
+                    text=feature.information[1].text
+                    local values = SplitComma(text)
+                    text = ToRoman(StringToNumber(values[1]))
+                    SetTextInRectangle(featurePortrayal, text, 0.0, 1.51, 2.5, 'AZUBL', 'Center') 
+                    text = ToRoman(StringToNumber(values[2]))
+                    SetTextInRectangle(featurePortrayal, text, 0.0, -1.51, 3, 'AZUBL', 'Center') 
                 elseif (feature.categoryOfNoticeMark == 122) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKINF59')
                 elseif (feature.categoryOfNoticeMark == 123) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKREG25')
-
-
                 elseif (feature.categoryOfNoticeMark == 12) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKPRH12')
                     if (feature.orientationValue) then 
@@ -424,9 +501,9 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
                 elseif (feature.categoryOfNoticeMark == 11) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKPR104')               
                 elseif (feature.categoryOfNoticeMark == 39) then
-                    featurePortrayal:AddInstructions('PointInstruction:NMKRE103')   
-                    featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Bottom;FontSize:10;FontColor:AZUBL')
-                    featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 29, 24, 32440, 15) 
+                    featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:NMKRE103')   
+                    text=EncodeString(feature.information[1].text , '%s') 
+                    SetTextInRectangle(featurePortrayal, text, 0.0, -1.05, 6.0, 'CHBLK', 'Center') 
                 elseif (feature.categoryOfNoticeMark == 74) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKIN101')
                 elseif (feature.categoryOfNoticeMark == 112) then
@@ -456,14 +533,12 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
                     end
                 elseif (feature.categoryOfNoticeMark == 39) then
                     if (feature.bankOfTheWaterway == 1) then
-                        featurePortrayal:AddInstructions('PointInstruction:NMKAC039R')  
+                        featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:NMKAC039R')  
                     elseif (feature.bankOfTheWaterway == 2) then
-                        featurePortrayal:AddInstructions('PointInstruction:NMKAC039G')            
+                        featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:NMKAC039G')            
                     end 
-                    
-                    featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
-                    featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 29, 24, 32440, 15)      
-                    
+                    text=EncodeString(feature.information[1].text , '%s') 
+                    SetTextInRectangle(featurePortrayal, text, 0.0, -1.35, 6.0, 'CHBLK', 'Center') 
                 elseif (feature.categoryOfNoticeMark == 44) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKRCD01')  
                 elseif (feature.categoryOfNoticeMark == 45) then
