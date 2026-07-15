@@ -100,7 +100,7 @@ local function SetTextInRectangle(featurePortrayal, text, centerX, centerY, widt
     local rectWidthMm = (width - 0.2)
     local fontSizePt = rectWidthMm / (visualLength * 0.3528)
 
-    featurePortrayal:AddInstructions('DrawingPriority:25;LocalOffset: '..centerX..','..centerY..';TextAlignHorizontal:'..align..';TextAlignVertical:Center;FontWeight:Medium;FontSize:'..fontSizePt..';FontColor:'..color..'')
+    featurePortrayal:AddInstructions('DrawingPriority:25;LocalOffset: '..centerX..','..centerY..';TextAlignHorizontal:'..align..';TextAlignVertical:Center;FontWeight:Bold;FontSize:'..fontSizePt..';FontColor:'..color..'')
     featurePortrayal:AddTextInstruction(text, 29, 24, 21020)   
 end
 
@@ -168,13 +168,11 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
                 elseif (feature.categoryOfNoticeMark == 5) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKPRH06')               
                 elseif (feature.categoryOfNoticeMark == 6) then
-                    featurePortrayal:AddInstructions('PointInstruction:NMKPRH07')   
-                --              
+                    featurePortrayal:AddInstructions('PointInstruction:NMKPRH07')                    
                 elseif (feature.categoryOfNoticeMark == 7) then
-                    featurePortrayal:AddInstructions('PointInstruction:NOTMRK01')   
-                    featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
-                    featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 29, 24, 32440, 15)         
-
+                    featurePortrayal:AddInstructions('DrawingPriority:24;PointInstruction:NMKPRH07A')    
+                    text=EncodeString(feature.distanceFromNoticeMarkSecond , '%s') 
+                    SetTextInRectangle(featurePortrayal, text, 0.0, 0.0, 5.51, 'CHBLK', 'Center') 
                 elseif (feature.categoryOfNoticeMark == 8) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKPRH08')            
                 elseif (feature.categoryOfNoticeMark == 9) then
@@ -453,6 +451,8 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
                     featurePortrayal:AddInstructions('PointInstruction:NMKINF59')
                 elseif (feature.categoryOfNoticeMark == 123) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKREG25')
+                elseif (feature.categoryOfNoticeMark == 128) then
+                    featurePortrayal:AddInstructions('PointInstruction:NMKPRH06A')
                 elseif (feature.categoryOfNoticeMark == 12) then
                     featurePortrayal:AddInstructions('PointInstruction:NMKPRH12')
                     if (feature.orientationValue) then 
