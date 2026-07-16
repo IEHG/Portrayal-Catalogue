@@ -1228,17 +1228,17 @@
 
         <item token="AZUBL">
             <cie>
-                <xyL>
-                    <x>0.2879495131642326</x>
-                    <y>0.5566139736953631</y>
-                    <L>28.623867506655515</L>
+                <xyL>                    
+                  <x>0.192329</x>
+                  <y>0.212383</y>
+                  <L>35.5915</L>
                 </xyL>         
             </cie>
             <srgb>
                 <red>0</red>
                 <green>169</green>
-                <blue>52</blue>
-            </srgb>       
+                <blue>255</blue>
+            </srgb>         
         </item>        
         <item token="BLACK">
             <cie>

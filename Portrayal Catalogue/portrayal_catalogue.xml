@@ -13,7 +13,18 @@
          <fileFormat>XML</fileFormat>
       </colorProfile>
    </colorProfiles>
-   <symbols>   
+   <symbols>
+   
+      <symbol id="ADDMRK05">
+         <description>
+            <name>ADDMRK05</name>
+            <description>bottom (rectangle)</description>
+            <language>eng</language>
+         </description>
+         <fileName>ADDMRK05.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
       <!--
       <symbol id="testPCB">
          <description>
@@ -4217,7 +4228,7 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="NMKA103G">
+      <symbol id="NMKAE103G">
          <description>
             <name>NMKAE103G</name>
             <description>proceed close to the margin on your portside, right bank</description> 
@@ -4237,7 +4248,7 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="NMKA104G">
+      <symbol id="NMKAE104G">
          <description>
             <name>NMKAE104G</name>
             <description>proceed close to the margin on your starboard side, right bank</description> 
@@ -4257,7 +4268,7 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="NMKA105G">
+      <symbol id="NMKAE105G">
          <description>
             <name>NMKAE105G</name>
             <description>proceed in the middle of the river, right bank</description> 
@@ -4277,7 +4288,7 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="NMKA106G">
+      <symbol id="NMKAE106G">
          <description>
             <name>NMKAE106G</name>
             <description>cross river to port, right bank</description> 
@@ -4919,7 +4930,6 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <!--
       <symbol id="NMKINF52">
          <description>
             <name>NMKINF52</name>
@@ -4960,7 +4970,6 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      -->
       <symbol id="NMKINF56">
          <description>
             <name>NMKINF56</name>
@@ -5167,7 +5176,6 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <!--
       <symbol id="NMKPRH06A">
          <description>
             <name>NMKPRH06A</name>
@@ -5178,7 +5186,6 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      -->
       <symbol id="NMKPRH07">
          <description>
             <name>NMKPRH07</name>
@@ -5189,7 +5196,6 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <!--
       <symbol id="NMKPRH07A">
          <description>
             <name>NMKPRH07A</name>
@@ -5200,7 +5206,6 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      -->
       <symbol id="NMKPRH08">
          <description>
             <name>NMKPRH08</name>
@@ -5855,7 +5860,6 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>     
-      <!--
       <symbol id="NOTMRK03">
          <description>
             <name>NOTMRK03</name>
@@ -5866,7 +5870,7 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>     
-      <symbol id="NOTMRK04">
+      <!--<symbol id="NOTMRK04">
          <description>
             <name>NOTMRK04</name>
             <description>several notice marks, at least one prohibition mark</description> 
@@ -12384,14 +12388,14 @@
       </displayMode>
    </displayModes>
    <displayPlanes>
-      <displayPlane id="OverRADAR" order="1">
+      <displayPlane id="OverRadar" order="1">
          <description>
             <name>Over radar</name>
             <description>Content displayed on top of Radar image</description>
             <language>eng</language>
          </description>
       </displayPlane>
-      <displayPlane id="UnderRADAR" order="-1">
+      <displayPlane id="UnderRadar" order="-1">
          <description>
             <name>Under radar</name>
             <description>Content displayed underneath Radar image</description>
@@ -12640,6 +12644,17 @@
             <language>eng</language>
          </description>
          <fileName>LITDSN02.lua</fileName>
+         <fileType>Rule</fileType>
+         <fileFormat>LUA</fileFormat>
+         <ruleType>SubTemplate</ruleType>
+      </ruleFile>
+      <ruleFile id="MARSYS01">
+         <description>
+            <name>MARSYS01</name>
+            <description>Custom rules MARSYS01</description>
+            <language>eng</language>
+         </description>
+         <fileName>MARSYS01.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
