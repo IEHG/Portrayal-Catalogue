@@ -85,7 +85,7 @@ function TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, is
 			topmarkSymbol = floatingTopmarks[feature.topmark.topmarkDaymarkShape] or 'TMARDEF2'
 			if isBeacon then
 				if feature.topmark.topmarkDaymarkShape == 1 and feature.topmark.colour[1] == 4 then
-					topmarkSymbol = 'TOPMA112'
+					topmarkSymbol = 'TOPMA102'
 				elseif feature.topmark.topmarkDaymarkShape == 1 and feature.topmark.colour[1] == 1 and feature.topmark.colour[2] == 4 and feature.topmark.colourPattern == 6 then 
 					topmarkSymbol = 'TOPMA103'
 				elseif feature.topmark.topmarkDaymarkShape == 1 and feature.topmark.colour[1] == 4 and feature.topmark.colour[2] == 1 and feature.topmark.colourPattern == 6 then 
