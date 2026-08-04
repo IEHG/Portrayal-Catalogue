@@ -28,6 +28,7 @@ function SplitComma(text)
 
 	return result
 end
+
 function StringToNumber(str)
 
 	local value = 0
@@ -42,6 +43,7 @@ function StringToNumber(str)
 
 	return value
 end
+
 function ToRoman(number)
 
 	local roman = ""
@@ -104,20 +106,11 @@ local function SetTextInRectangle(featurePortrayal, text, centerX, centerY, widt
 	featurePortrayal:AddTextInstruction(text, 29, 24, 21020)   
 end
 
-function NoticeMark(feature, featurePortrayal, contextParameters)
-	local viewingGroup 
+local function DrawSymbol(feature, featurePortrayal, contextParameters, marksNavigationalSystemOf)
 	local text
-	local marksNavigationalSystemOf = MARSYS01(feature, featurePortrayal, contextParameters, viewingGroup)
 
 	-- Simplified and paper chart points use the same symbolization
 	if feature.PrimitiveType == PrimitiveType.Point then
-		viewingGroup = 27250
-		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:27250;DrawingPriority:32;DisplayPlane:OverRadar')
-		else				
-			featurePortrayal:AddInstructions('ViewingGroup:27250;DrawingPriority:32;DisplayPlane:UnderRadar')
-		end
-
 		if contextParameters.SimplifiedSymbols then
 			if (feature.functionOfNoticeMark == 1) then 
 				featurePortrayal:AddInstructions('PointInstruction:NOTMRK01')      
@@ -693,6 +686,72 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
 		end 
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
+	end
+end
+
+function NoticeMark(feature, featurePortrayal, contextParameters)
+	local viewingGroup = 27250
+	local marksNavigationalSystemOf = MARSYS01(feature, featurePortrayal, contextParameters, viewingGroup)
+
+	local totalMarks = 0
+	local ourMarkPosition = 0
+
+	local coNoticeMarks = {}
+
+	for pointAssociation in feature:GetFlattenedSpatialAssociations() do
+		local associatedFeatures = pointAssociation.AssociatedFeatures
+
+		for _, af in ipairs(associatedFeatures) do
+			if af.Code == 'NoticeMark' then
+				totalMarks = totalMarks + 1
+
+				coNoticeMarks[totalMarks] = af
+
+				if af == feature then
+					ourMarkPosition = totalMarks
+				end
+			end
+		end
+	end
+
+	Debug.Trace('NoticeMark ' .. feature.ID .. ' ' .. ourMarkPosition .. ' of ' .. totalMarks)
+
+	if contextParameters.RadarOverlay then
+		featurePortrayal:AddInstructions('ViewingGroup:27250;DrawingPriority:32;DisplayPlane:OverRadar')
+	else				
+		featurePortrayal:AddInstructions('ViewingGroup:27250;DrawingPriority:32;DisplayPlane:UnderRadar')
+	end
+
+	if ourMarkPosition == 1 then
+		if totalMarks == 1 then
+			DrawSymbol(feature, featurePortrayal, contextParameters, marksNavigationalSystemOf)
+		else
+			local deltaAngle = 360 / totalMarks
+			local length = 25
+
+			for i = 1, totalMarks do
+				local curAngle = deltaAngle * i
+
+				featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. curAngle .. ',LocalCRS,' .. length)
+				featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
+				featurePortrayal:AddInstructions('LineInstruction:_simple_')
+				featurePortrayal:AddInstructions('ClearGeometry')
+
+				local radians = math.rad(90 + curAngle)
+				
+				local x = length * math.cos(radians)
+				local y = length * math.sin(radians)
+				
+				featurePortrayal:AddInstructions('AugmentedPoint:LocalCRS,' .. x .. ',' .. y)
+
+				--Debug.Trace('AugmentedRay:GeographicCRS,' .. curAngle .. ',LocalCRS,' .. length)
+				--Debug.Trace('AugmentedPoint:LocalCRS,' .. x .. ',' .. y .. '  curAngle:' .. curAngle .. ' radians:' .. radians)
+
+				DrawSymbol(coNoticeMarks[i], featurePortrayal, contextParameters, marksNavigationalSystemOf)
+
+				featurePortrayal:AddInstructions('ClearGeometry')
+			end
+		end
 	end
 
 	return viewingGroup

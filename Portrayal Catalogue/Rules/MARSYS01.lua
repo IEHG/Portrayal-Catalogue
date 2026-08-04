@@ -1,5 +1,5 @@
 
-function MARSYS01(feature, featurePortrayal, contextParameters, viewingGroup)
+function MARSYS01(feature)
 	Debug.StartPerformance('Lua Code - MARSYS01')
 	
 	local marksNavigationalSystemOf = feature.marksNavigationalSystemOf
