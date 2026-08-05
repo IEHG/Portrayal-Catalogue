@@ -689,6 +689,11 @@ local function DrawSymbol(feature, featurePortrayal, contextParameters, marksNav
 	end
 end
 
+-- Mostly for neatness when debugging.
+local function snapZero(value)
+	return math.abs(value) < 1e-10 and 0 or value
+end
+
 function NoticeMark(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27250
 	local marksNavigationalSystemOf = MARSYS01(feature, featurePortrayal, contextParameters, viewingGroup)
@@ -730,22 +735,22 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
 			local length = 25
 
 			for i = 1, totalMarks do
-				local curAngle = deltaAngle * i
+				local curAngle = deltaAngle * (i - 1)
 
 				featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. curAngle .. ',LocalCRS,' .. length)
 				featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 				featurePortrayal:AddInstructions('ClearGeometry')
 
-				local radians = math.rad(90 + curAngle)
+				local radians = math.rad(90 - curAngle)
 				
-				local x = length * math.cos(radians)
-				local y = length * math.sin(radians)
-				
+				local x = length * snapZero(math.cos(radians))
+				local y = length * snapZero(math.sin(radians))
+
 				featurePortrayal:AddInstructions('AugmentedPoint:LocalCRS,' .. x .. ',' .. y)
 
-				--Debug.Trace('AugmentedRay:GeographicCRS,' .. curAngle .. ',LocalCRS,' .. length)
-				--Debug.Trace('AugmentedPoint:LocalCRS,' .. x .. ',' .. y .. '  curAngle:' .. curAngle .. ' radians:' .. radians)
+				Debug.Trace('AugmentedRay:GeographicCRS,' .. curAngle .. ',LocalCRS,' .. length)
+				Debug.Trace('AugmentedPoint:LocalCRS,' .. x .. ',' .. y .. '  curAngle:' .. curAngle .. ' radians:' .. radians)
 
 				DrawSymbol(coNoticeMarks[i], featurePortrayal, contextParameters, marksNavigationalSystemOf)
 
