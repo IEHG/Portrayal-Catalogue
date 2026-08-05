@@ -743,7 +743,7 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
 			for i = 1, totalMarks do
 				local curAngle = deltaAngle * (i - 1)
 
-				featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. curAngle .. ',LocalCRS,' .. length)
+				featurePortrayal:AddInstructions('AugmentedRay:LocalCRS,' .. curAngle .. ',LocalCRS,' .. length)
 				featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 				featurePortrayal:AddInstructions('ClearGeometry')
@@ -755,7 +755,7 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
 
 				featurePortrayal:AddInstructions('AugmentedPoint:LocalCRS,' .. x .. ',' .. y)
 
-				Debug.Trace('AugmentedRay:GeographicCRS,' .. curAngle .. ',LocalCRS,' .. length)
+				Debug.Trace('AugmentedRay:LocalCRS,' .. curAngle .. ',LocalCRS,' .. length)
 				Debug.Trace('AugmentedPoint:LocalCRS,' .. x .. ',' .. y .. '  curAngle:' .. curAngle .. ' radians:' .. radians)
 
 				DrawSymbol(coNoticeMarks[i], featurePortrayal, contextParameters, marksNavigationalSystemOf)
