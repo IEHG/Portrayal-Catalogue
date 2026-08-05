@@ -732,7 +732,13 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
 			DrawSymbol(feature, featurePortrayal, contextParameters, marksNavigationalSystemOf)
 		else
 			local deltaAngle = 360 / totalMarks
-			local length = 25
+			local length = 10
+
+			if totalMarks > 6 then
+				-- Spread out marks for more breathing room.
+				-- TODO: Determine maximum number of marks and mitigation strategy.
+				length = 15
+			end
 
 			for i = 1, totalMarks do
 				local curAngle = deltaAngle * (i - 1)
