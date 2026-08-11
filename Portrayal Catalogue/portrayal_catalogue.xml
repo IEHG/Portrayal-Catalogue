@@ -12535,6 +12535,15 @@
 	   </validate>
      </parameter>
 	 
+     <parameter id="FanOutNoticeMarks">
+       <description>
+         <name>Fan out Notice Marks</name>
+         <description>Display co-lacated Notice Marks in circular pattern to reveal all signs</description>
+         <language>eng</language>
+       </description>
+       <type>Boolean</type>
+       <default>false</default>
+     </parameter>
    </context>
 
    <rules>

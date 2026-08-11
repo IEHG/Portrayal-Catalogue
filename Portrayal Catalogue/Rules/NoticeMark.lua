@@ -723,13 +723,17 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('ViewingGroup:27250;DrawingPriority:32;DisplayPlane:UnderRadar')
 	end
 
-	if totalMarks == 1 then
-		DrawSymbol(feature, featurePortrayal, contextParameters, marksNavigationalSystemOf)
+	if totalMarks == 1 or not contextParameters.FanOutNoticeMarks then
+		if totalMarks == 1 then
+			DrawSymbol(feature, featurePortrayal, contextParameters, marksNavigationalSystemOf)
+		else
+			featurePortrayal:AddInstructions('ScaleFactor:3;PointInstruction:NOTMRK01;LocalOffset:1.9,-3;TextInstruction:' .. totalMarks)
+		end
 	else
 		local deltaAngle = 360 / totalMarks
 		local length = 10
 
-		if totalMarks > 6 then
+		if totalMarks > 5 then
 			-- Spread out marks for more breathing room.
 			-- TODO: Determine maximum number of marks and mitigation strategy.
 			length = 15
@@ -753,8 +757,6 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
 		Debug.Trace('AugmentedPoint:LocalCRS,' .. x .. ',' .. y .. '  curAngle:' .. curAngle .. ' radians:' .. radians)
 
 		DrawSymbol(feature, featurePortrayal, contextParameters, marksNavigationalSystemOf)
-
-		featurePortrayal:AddInstructions('ClearGeometry')
 	end
 
 	return viewingGroup
