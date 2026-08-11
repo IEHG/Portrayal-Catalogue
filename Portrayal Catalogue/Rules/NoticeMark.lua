@@ -701,16 +701,12 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
 	local totalMarks = 0
 	local ourMarkPosition = 0
 
-	local coNoticeMarks = {}
-
 	for pointAssociation in feature:GetFlattenedSpatialAssociations() do
 		local associatedFeatures = pointAssociation.AssociatedFeatures
 
 		for _, af in ipairs(associatedFeatures) do
 			if af.Code == 'NoticeMark' then
 				totalMarks = totalMarks + 1
-
-				coNoticeMarks[totalMarks] = af
 
 				if af == feature then
 					ourMarkPosition = totalMarks
@@ -727,42 +723,38 @@ function NoticeMark(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('ViewingGroup:27250;DrawingPriority:32;DisplayPlane:UnderRadar')
 	end
 
-	if ourMarkPosition == 1 then
-		if totalMarks == 1 then
-			DrawSymbol(feature, featurePortrayal, contextParameters, marksNavigationalSystemOf)
-		else
-			local deltaAngle = 360 / totalMarks
-			local length = 10
+	if totalMarks == 1 then
+		DrawSymbol(feature, featurePortrayal, contextParameters, marksNavigationalSystemOf)
+	else
+		local deltaAngle = 360 / totalMarks
+		local length = 10
 
-			if totalMarks > 6 then
-				-- Spread out marks for more breathing room.
-				-- TODO: Determine maximum number of marks and mitigation strategy.
-				length = 15
-			end
-
-			for i = 1, totalMarks do
-				local curAngle = deltaAngle * (i - 1)
-
-				featurePortrayal:AddInstructions('AugmentedRay:LocalCRS,' .. curAngle .. ',LocalCRS,' .. length)
-				featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
-				featurePortrayal:AddInstructions('LineInstruction:_simple_')
-				featurePortrayal:AddInstructions('ClearGeometry')
-
-				local radians = math.rad(90 - curAngle)
-				
-				local x = length * snapZero(math.cos(radians))
-				local y = length * snapZero(math.sin(radians))
-
-				featurePortrayal:AddInstructions('AugmentedPoint:LocalCRS,' .. x .. ',' .. y)
-
-				Debug.Trace('AugmentedRay:LocalCRS,' .. curAngle .. ',LocalCRS,' .. length)
-				Debug.Trace('AugmentedPoint:LocalCRS,' .. x .. ',' .. y .. '  curAngle:' .. curAngle .. ' radians:' .. radians)
-
-				DrawSymbol(coNoticeMarks[i], featurePortrayal, contextParameters, marksNavigationalSystemOf)
-
-				featurePortrayal:AddInstructions('ClearGeometry')
-			end
+		if totalMarks > 6 then
+			-- Spread out marks for more breathing room.
+			-- TODO: Determine maximum number of marks and mitigation strategy.
+			length = 15
 		end
+
+		local curAngle = deltaAngle * (ourMarkPosition - 1)
+
+		featurePortrayal:AddInstructions('AugmentedRay:LocalCRS,' .. curAngle .. ',LocalCRS,' .. length)
+		featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
+		featurePortrayal:AddInstructions('LineInstruction:_simple_')
+		featurePortrayal:AddInstructions('ClearGeometry')
+
+		local radians = math.rad(90 - curAngle)
+				
+		local x = length * snapZero(math.cos(radians))
+		local y = length * snapZero(math.sin(radians))
+
+		featurePortrayal:AddInstructions('AugmentedPoint:LocalCRS,' .. x .. ',' .. y)
+
+		Debug.Trace('AugmentedRay:LocalCRS,' .. curAngle .. ',LocalCRS,' .. length)
+		Debug.Trace('AugmentedPoint:LocalCRS,' .. x .. ',' .. y .. '  curAngle:' .. curAngle .. ' radians:' .. radians)
+
+		DrawSymbol(feature, featurePortrayal, contextParameters, marksNavigationalSystemOf)
+
+		featurePortrayal:AddInstructions('ClearGeometry')
 	end
 
 	return viewingGroup
