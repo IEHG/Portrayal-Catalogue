@@ -4,8 +4,8 @@
 -- issues to solve: none
 --
 
--- Waterway axis main entry point.
-function WaterwayAxis(feature, featurePortrayal, contextParameters)
+-- Waterway profile main entry point.
+function WaterwayProfile(feature, featurePortrayal, contextParameters)
 	local viewingGroup
     
     if feature.PrimitiveType == PrimitiveType.Curve then
