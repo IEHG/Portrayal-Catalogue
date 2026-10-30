@@ -15,7 +15,7 @@ function Dolphin(feature, featurePortrayal, contextParameters)
 		-- #437
 		local categoryOfDolphin = feature.categoryOfDolphin
 		
-		if (contains(2,categoryOfDolphin)) then
+		if categoryOfDolphin == 2 then
 			-- Deviation Dolphin
 			featurePortrayal:AddInstructions('PointInstruction:MORFAC04')
 		else
