@@ -6,7 +6,7 @@
 
 -- Communication area main entry point.
 function CommunicationArea(feature, featurePortrayal, contextParameters)
-	local viewingGroup
+	local viewingGroup = 38010
 
 	if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
