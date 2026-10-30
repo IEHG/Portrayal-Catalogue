@@ -4,6 +4,17 @@
 -- Tidal stream - flood/ebb main entry point.
 function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 	local viewingGroup
+	local unit
+
+	if feature.speedUnits==1 then
+		unit = 'm/s'
+	elseif feature.speedUnits==2 then
+		unit = 'km/h'
+	elseif feature.speedUnits==3 then
+		unit = 'mph'
+	elseif feature.speedUnits==4 then
+		unit = 'kn'
+	end
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.categoryOfTidalStream == 1 and feature.orientation and feature.orientation.orientationValue then
@@ -17,9 +28,11 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FLDSTR01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 						  
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
-	   
+			if feature.speed and feature.speed ~= nil then
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f ' .. unit), 30, 24, 33060, 12)
+			end 
+			
 		elseif feature.categoryOfTidalStream == 2 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
@@ -31,9 +44,11 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:EBBSTR01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 						  
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
-	   
+			if feature.speed and feature.speed ~= nil then
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f ' .. unit), 30, 24, 33060, 12)
+			end 
+			
 		elseif feature.categoryOfTidalStream == 3 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
@@ -45,9 +60,11 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:CURENT01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 						  
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
-	  
+			if feature.speed and feature.speed ~= nil then
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f ' .. unit), 30, 24, 33060, 12)
+			end 
+			
 		else
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
@@ -69,9 +86,11 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FLDSTR01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 						  
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
-	  
+			if feature.speed and feature.speed ~= nil then
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f ' .. unit), 30, 24, 33060, 12)
+			end 
+			
 		elseif feature.categoryOfTidalStream == 2 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
@@ -83,9 +102,11 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:EBBSTR01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 						  
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
-	   
+			if feature.speed and feature.speed ~= nil then
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f ' .. unit), 30, 24, 33060, 12)
+			end 
+			
 		elseif feature.categoryOfTidalStream == 3 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
@@ -97,9 +118,11 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:CURENT01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 						  
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
-	   
+			if feature.speed and feature.speed ~= nil then
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f ' .. unit), 30, 24, 33060, 12)
+			end 
+			
 		else
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
@@ -117,9 +140,11 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FLDSTR01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 						  
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
-	  
+			if feature.speed and feature.speed ~= nil then
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f ' .. unit), 30, 24, 33060, 12)
+			end 
+			
 		elseif feature.categoryOfTidalStream == 2 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
@@ -127,9 +152,11 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:EBBSTR01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 						  
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
-	   
+			if feature.speed and feature.speed ~= nil then
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f ' .. unit), 30, 24, 33060, 12)
+			end 
+			
 		elseif feature.categoryOfTidalStream == 3 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
@@ -137,9 +164,11 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:CURENT01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 						  
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
-	   
+			if feature.speed and feature.speed ~= nil then
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f ' .. unit), 30, 24, 33060, 12)
+			end 
+			
 		else
 			viewingGroup = 33060
 			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:6;DisplayPlane:UnderRADAR')
@@ -155,9 +184,11 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FLDSTR01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 						  
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
-	   
+			if feature.speed and feature.speed ~= nil then
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f ' .. unit), 30, 24, 33060, 12)
+			end 
+			
 		elseif feature.categoryOfTidalStream == 2 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
@@ -165,9 +196,11 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:EBBSTR01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 						  
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
-	   
+			if feature.speed and feature.speed ~= nil then
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f ' .. unit), 30, 24, 33060, 12)
+			end 
+			
 		elseif feature.categoryOfTidalStream == 3 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
@@ -175,9 +208,11 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:CURENT01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 						  
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
-	  
+			if feature.speed and feature.speed ~= nil then
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f ' .. unit), 30, 24, 33060, 12)
+			end 
+			
 		else
 			viewingGroup = 33060
 			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:6;DisplayPlane:UnderRADAR')
