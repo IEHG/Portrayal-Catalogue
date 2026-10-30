@@ -1,5 +1,12 @@
 Changelog:
 
+IMPORTANT NOTICE (30 October 2026):
+The development of several script is still ongoing and therefore the GitHub is not always updated:
+- currently under development: NoticeMarks.lua
+
+30 October 2026
+- Adopted fixes (#40, #41, #42, #44, #45, #46, #47)
+  
 27 March 2026
 - symbols updated to S-100 SVG Profile
 - scripts compared and adapted to S-101 Edition 2.0.0 scripts
