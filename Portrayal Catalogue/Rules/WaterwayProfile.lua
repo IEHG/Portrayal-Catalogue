@@ -5,7 +5,7 @@
 --
 
 -- Waterway axis main entry point.
-function WaterwayAxis(feature, featurePortrayal, contextParameters)
+function WaterwayProfile(feature, featurePortrayal, contextParameters)
 	local viewingGroup
     
     if feature.PrimitiveType == PrimitiveType.Curve then
