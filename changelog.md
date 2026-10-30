@@ -1,7 +1,7 @@
 Changelog:
 
 IMPORTANT NOTICE (30 October 2026):
-The development of several script is still ongoing and therefore the GitHub is not always updated:
+The development of several scripts is still ongoing and therefore the GitHub is not always updated:
 - currently under development: NoticeMarks.lua
 
 30 October 2026
