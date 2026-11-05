@@ -1,6 +1,8 @@
 # Portrayal-Catalogue
 This focus group was set to review and agree proposed changes to the S-401 Portrayal Catalogue. An Issue has been created for each discussion item. 
 
+IMPORTANT NOTICE (2026-11-05): The current S-401 PC is based on the S-101 PC Edition 1.2.0. and still needs to be aligned with the latest edition of the S-101 PC.
+
 Information:
 
 #001:  The folder 'Portrayal-Catalogue' is containing all elements the S-401 shall use with the exemption of the symbols. The hydro symbols needs to be added in the 'Symbols' folder.
