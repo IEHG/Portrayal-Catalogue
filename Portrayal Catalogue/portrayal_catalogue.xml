@@ -5870,7 +5870,7 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>     
-      <!--<symbol id="NOTMRK04">
+      <symbol id="NOTMRK04">
          <description>
             <name>NOTMRK04</name>
             <description>several notice marks, at least one prohibition mark</description> 
@@ -5900,7 +5900,7 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>     
-      <symbol id="NOVCON01A">
+      <!--<symbol id="NOVCON01A">
          <description>
             <name>NOVCON01A</name>
             <description>no overtaking of convoys by convoys</description> 
